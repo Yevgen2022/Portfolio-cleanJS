@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(data => {
             document.getElementById("header-placeholder").innerHTML = data;
 
-            // Імпортуємо модуль після вставки хедера
+            // Import the module after inserting the header
             return import('./eventDelegation.js');
+
         })
         .then(() => {
             console.log("eventDelegation.js завантажено");
