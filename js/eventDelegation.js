@@ -16,9 +16,10 @@ document.body.addEventListener('click', (event) => {
         showMobileMenu()
     }
 
-    const page = event.target.closest('#navigation-id a');
+    const page = event.target.closest('.navigation a');
     if (page) {
-        loadPage(page.id);
+        event.preventDefault();
+        loadPage(page.getAttribute('data-page'));
     }
 
 });
