@@ -29,5 +29,6 @@ export function toggleTheme() {
         sunIcon.classList.remove('hidden');
     }
 }
-// Робимо доступною глобально
+
+// do it globally
 // window.toggleTheme = toggleTheme;

@@ -1,5 +1,6 @@
 import {toggleTheme} from './theme.js';
 import {showMobileMenu} from "./mobileMenu.js";
+import {LoadResumePage} from "./resume.js";
 
 document.body.addEventListener('click', (event) => {
 
@@ -13,6 +14,11 @@ document.body.addEventListener('click', (event) => {
     const mobileMenuButton = event.target.closest('#mobile-menu-button');
     if (mobileMenuButton) {
         showMobileMenu()
+    }
+
+    const resumeItems = event.target.closest('#resume-id');
+    if (resumeItems) {
+        LoadResumePage();
     }
 
 
