@@ -1,6 +1,6 @@
 import {toggleTheme} from './theme.js';
 import {showMobileMenu} from "./mobileMenu.js";
-import {LoadResumePage} from "./resume.js";
+import {loadPage} from "./downLoadPages.js";
 
 document.body.addEventListener('click', (event) => {
 
@@ -10,16 +10,15 @@ document.body.addEventListener('click', (event) => {
         toggleTheme();
     }
 
-   // event for mobile-menu (burger)
+    // event for mobile-menu (burger)
     const mobileMenuButton = event.target.closest('#mobile-menu-button');
     if (mobileMenuButton) {
         showMobileMenu()
     }
 
-    const resumeItems = event.target.closest('#resume-id');
-    if (resumeItems) {
-        LoadResumePage();
+    const page = event.target.closest('#navigation-id a');
+    if (page) {
+        loadPage(page.id);
     }
-
 
 });
