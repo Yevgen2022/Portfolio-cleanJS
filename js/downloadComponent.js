@@ -1,4 +1,4 @@
-
+import {loadPage} from "./downLoadPages.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         })
         .then(() => {
-            console.log("eventDelegation.js завантажено");
+            console.log("eventDelegation.js downloaded");
+            loadPage("home");
         })
-        .catch(error => console.error("Помилка при завантаженні компонента або модуля:", error));
+        .catch(error => console.error("Error loading component or module:", error));
 
 
 });
