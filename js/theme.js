@@ -30,5 +30,22 @@ export function toggleTheme() {
     }
 }
 
-// do it globally
-// window.toggleTheme = toggleTheme;
+export function initTheme() {
+    const sunIcon = document.getElementById('sun');
+    const moonIcon = document.getElementById('moon');
+
+    if (
+        localStorage.getItem('theme') === 'dark' ||
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark');
+        moonIcon?.classList.remove('hidden');
+        sunIcon?.classList.add('hidden');
+    } else {
+        document.documentElement.classList.remove('dark');
+        sunIcon?.classList.remove('hidden');
+        moonIcon?.classList.add('hidden');
+    }
+}
+
+

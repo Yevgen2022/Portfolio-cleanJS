@@ -26,7 +26,8 @@
                 <textarea id="message" name="message" rows="5" required class="w-full p-2 rounded-md border dark:bg-gray-800 dark:border-gray-600 dark:text-white"></textarea>
             </div>
 
-            <input type="hidden" name="_next" value="thank.html" />
+            <input type="hidden" name="_next" value="/pages/thank.html" />
+<!--            <input type="hidden" name="_next" value="https://my-site.com/pages/thank.html" />-->
             <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Send Message</button>
         </form>
 
@@ -42,6 +43,8 @@
                     }
                 }).then(response => {
                     if (response.ok) {
+
+                        form.reset();
                         window.location.href = 'thank.html';
                     } else {
                         alert("There was a problem submitting your form");

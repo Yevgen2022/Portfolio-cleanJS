@@ -1,6 +1,9 @@
 import {loadPage} from "./downLoadPages.js";
+import {initTheme} from "./theme.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    initTheme();
 
     // download header
     fetch("./components/header.html")
