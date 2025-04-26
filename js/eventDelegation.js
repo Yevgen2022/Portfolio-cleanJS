@@ -1,7 +1,7 @@
 import {toggleTheme} from './theme.js';
 import {showMobileMenu} from "./mobileMenu.js";
 import {loadPage} from "./downLoadPages.js";
-import {initCertificatesToggle} from "./certificates.js";
+import {toggleCertificatesView} from "./certificates.js";
 
 document.body.addEventListener('click', (event) => {
 
@@ -25,7 +25,7 @@ document.body.addEventListener('click', (event) => {
 
     const toggleView = event.target.closest('#toggleView');
     if (toggleView) {
-        initCertificatesToggle();
+        toggleCertificatesView();
     }
     // initCertificatesToggle();
 
