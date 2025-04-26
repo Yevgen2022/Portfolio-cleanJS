@@ -28,7 +28,10 @@ document.body.addEventListener('click', (event) => {
     if (toggleView) {
         toggleCertificatesView();
     }
+});
 
+
+document.body.addEventListener('submit', (event) => {
     const form = event.target.closest('form');
     if (form) {
         event.preventDefault();  // Stop the form from submitting by default
@@ -52,6 +55,9 @@ document.body.addEventListener('click', (event) => {
             })
             .catch(error => {
                 alert("There was a problem submitting your form");
+
             });
     }
 });
+
+
