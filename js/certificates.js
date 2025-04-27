@@ -3,25 +3,25 @@ export function toggleCertificatesView() {
     const container = document.getElementById('certContainer');
     const icon = document.getElementById('toggleIcon');
 
-    // Якщо контейнер або іконка відсутні, не продовжуємо
+    // If the container or icon is missing, we do not continue.
     if (!container || !icon) return;
 
     let isGrid = container.classList.contains('grid');
 
-    // Перемикаємо стан між grid і flex
+    // Toggle state between grid and flex
     isGrid = !isGrid;
 
-    // Оновлюємо класи для контейнера
+    // Updating classes for the container
     container.className = isGrid
         ? 'grid md:grid-cols-2 lg:grid-cols-3 gap-6'
         : 'flex flex-col gap-6';
 
-    // Оновлюємо іконку
+    // Updating the icon
     icon.innerHTML = isGrid
         ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />'
         : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />';
 
-    // Оновлюємо картки в контейнері
+    // Updating cards in the container
     Array.from(container.children).forEach(card => {
         const img = card.querySelector('img');
         if (isGrid) {
