@@ -1,5 +1,11 @@
+
+
+// This module puts any component in place
+//
+// which we pointed
+
 export function loadComponent(componentName, targetId) {
-    fetch(`./components/${componentName}.html`)
+    return  fetch(`./components/${componentName}.html`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Component ${componentName} failed to load`);

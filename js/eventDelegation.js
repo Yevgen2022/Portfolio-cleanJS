@@ -1,6 +1,6 @@
 import {toggleTheme} from './theme.js';
 import {showMobileMenu} from "./mobileMenu.js";
-import {loadPage} from "./downLoadPages.js";
+import {loadPage} from "./loadPages.js";
 import {toggleCertificatesView} from "./certificates.js";
 import {showSuccessModal} from './successModal.js';
 
