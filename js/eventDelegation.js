@@ -18,12 +18,27 @@ document.body.addEventListener('click', (event) => {
         showMobileMenu()
     }
 
-    const page = event.target.closest('.navigation a');
-    if (page) {
+
+    //event for load page
+    const pageLink = event.target.closest('.navigation a');
+    if (pageLink) {
         event.preventDefault();
-        loadPage(page.getAttribute('data-page'));
+
+    // Remove old active styles from all menu items
+        document.querySelectorAll('.navigation a').forEach(link => {
+            // link.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'rounded-md');
+            link.classList.remove('activeLink-header-gray');
+        });
+
+    // Add a new active style
+    //     pageLink.classList.add('bg-gray-200', 'dark:bg-gray-700', 'rounded-md');
+        pageLink.classList.add('activeLink-header-gray');
+
+        loadPage(pageLink.getAttribute('data-page'));
     }
 
+
+    //event for change view's certificates
     const toggleView = event.target.closest('#toggleView');
     if (toggleView) {
         toggleCertificatesView();
