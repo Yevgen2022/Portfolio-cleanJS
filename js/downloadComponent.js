@@ -17,9 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(() => {
             console.log("eventDelegation.js downloaded");
+
+
+            // download footer
+            return fetch("./components/footerComponent.html");
+        })
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-placeholder").innerHTML = data;
+
+            //download startPage (home)
             loadPage("home");
         })
         .catch(error => console.error("Error loading component or module:", error));
-
-
 });
