@@ -24,14 +24,12 @@ document.body.addEventListener('click', (event) => {
     if (pageLink) {
         event.preventDefault();
 
-    // Remove old active styles from all menu items
+        // Remove old active styles from all menu items
         document.querySelectorAll('.navigation a').forEach(link => {
-            // link.classList.remove('bg-gray-200', 'dark:bg-gray-700', 'rounded-md');
             link.classList.remove('activeLink-header-gray');
         });
 
-    // Add a new active style
-    //     pageLink.classList.add('bg-gray-200', 'dark:bg-gray-700', 'rounded-md');
+        // Add a new active style
         pageLink.classList.add('activeLink-header-gray');
 
         loadPage(pageLink.getAttribute('data-page'));
