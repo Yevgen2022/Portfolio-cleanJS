@@ -1,5 +1,7 @@
-// This module downloads dynamic pages and put component into
-//
+
+
+// This module downloads dynamic pages
+// and put component into
 // with  loadComponent function
 
 import {loadComponent} from "./loadComponent.js";

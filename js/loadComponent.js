@@ -1,8 +1,8 @@
 
 
-// This module puts any component in place
-//
-// which we pointed
+// This module puts any component with componentName
+// in place
+// which we pointed in targetId
 
 export function loadComponent(componentName, targetId) {
     return  fetch(`./components/${componentName}.html`)

@@ -1,18 +1,24 @@
+
+
+// this module download all content, theme (light-dark)
+// and component
+
+
 import { loadPage } from "./loadPages.js";
 import { initTheme } from "./theme.js";
-import { loadComponent } from "./loadComponent.js"; // імпортуємо свою функцію
+import { loadComponent } from "./loadComponent.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     initTheme();
 
     Promise.all([
-        loadComponent('header', 'header-placeholder'),    // Завантажуємо хедер
-        loadComponent('footerComponent', 'footer-placeholder') // Завантажуємо футер
+        loadComponent('header', 'header-placeholder'),    // download header
+        loadComponent('footerComponent', 'footer-placeholder') // download footer
     ])
-        .then(() => import('./eventDelegation.js'))   // Коли вставили хедер і футер — підключаємо делегування
+        .then(() => import('./eventDelegation.js'))   // enable delegation
         .then(() => {
             console.log("eventDelegation.js downloaded");
-            loadPage("home"); // І тільки потім стартова сторінка
+            loadPage("home"); // download home-page
         })
         .catch(error => {
             console.error("Error loading component or module:", error);
