@@ -17,7 +17,7 @@ export function loadPage(page) {
     // Массив можливих шляхів для пошуку (порядок має значення)
     const possiblePaths = [
         `../pages/${page}.html`,
-        `../pages/projectDetails/${page}.html`,
+        `../pages/projectsDetails/${page}.html`,
         // `../pages/another-folder/${page}.html`, // якщо ще інші папки будуть
     ];
 
