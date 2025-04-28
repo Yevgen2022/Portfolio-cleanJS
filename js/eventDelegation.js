@@ -41,9 +41,22 @@ document.body.addEventListener('click', (event) => {
     if (toggleView) {
         toggleCertificatesView();
     }
+
+
+    //event for showing project's details class(view-details)
+    const btnViewDetails = event.target.closest('.view-details');
+    if (btnViewDetails) {
+        event.preventDefault();
+        loadPage(btnViewDetails.getAttribute('data-project'));
+    }
+
+
+
+
 });
 
 
+//event for submit form
 document.body.addEventListener('submit', (event) => {
     const form = event.target.closest('form');
     if (form) {
