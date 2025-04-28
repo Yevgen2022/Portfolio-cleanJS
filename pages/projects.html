@@ -1,0 +1,63 @@
+<!-- pages/projects.html -->
+<div class="max-w-6xl mx-auto px-6 pt-20 pb-24">
+    <section>
+        <h2 class="text-3xl font-bold mb-8 border-b pb-2 border-gray-300 dark:border-gray-700">
+            My Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Project 1 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                        Особисте портфоліо. Створено на Vanilla JS, TailwindCSS, модульна структура.
+                    </p>
+                </div>
+                <button data-project="portfolio" class="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition w-full">
+                    View Details
+                </button>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Task Manager App</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                        Full-Stack проект. React + Node.js + MongoDB. Менеджер задач із JWT авторизацією.
+                    </p>
+                </div>
+                <button data-project="task-manager" class="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition w-full">
+                    View Details
+                </button>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                        Пошук погоди за містом. Інтеграція з API OpenWeather, використання Fetch API.
+                    </p>
+                </div>
+                <button data-project="weather-app" class="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition w-full">
+                    View Details
+                </button>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<script type="module">
+    import { loadPage } from '../js/loadPages.js';
+
+    document.addEventListener('click', (e) => {
+        const btn = e.target.closest('button[data-project]');
+        if (btn) {
+            const project = btn.getAttribute('data-project');
+            loadPage(`project-details/${project}`);
+        }
+    });
+</script>

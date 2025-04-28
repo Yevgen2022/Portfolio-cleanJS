@@ -11,8 +11,12 @@
         @apply bg-blue-200 dark:bg-blue-700 rounded-md;
     }
 
-    .link-header{
-        @apply py-2 px-3  hover:text-blue-600 transform transition duration-300;
+    /*.link-header{*/
+    /*    @apply py-2 px-3  hover:text-blue-600 transform transition duration-300;*/
+    /*}*/
+
+    .link-header {
+        @apply py-2 px-3 hover:text-blue-600 transform hover:scale-105 transition-all duration-300;
     }
 }
 /*hover:text-blue-600*/
