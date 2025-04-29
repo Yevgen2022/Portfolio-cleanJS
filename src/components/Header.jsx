@@ -42,22 +42,22 @@ export default function Header() {
 
                     <ul className="hidden md:flex space-x-6 text-base font-medium">
                         <li><NavLink to="/"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Home</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Home</NavLink>
                         </li>
                         <li><NavLink to="/resume"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Resume</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Resume</NavLink>
                         </li>
                         <li><NavLink to="/education"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Education</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Education</NavLink>
                         </li>
                         <li><NavLink to="/certificates"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Certificates</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Certificates</NavLink>
                         </li>
                         <li><NavLink to="/projects"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Projects</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Projects</NavLink>
                         </li>
                         <li><NavLink to="/contact"
-                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Contact</NavLink>
+                                     className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Contact</NavLink>
                         </li>
                     </ul>
 

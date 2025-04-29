@@ -33,10 +33,10 @@ export default function Home() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a href="#contact"
-                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400 transition-theme-color shadow-md">Contact
+                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 hover:shadow-xl transition-theme-color shadow-md transform-el-scale">Contact
                                     Me</a>
                                 <a href="#projects"
-                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-400 transition-theme-color shadow-md">View
+                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 hover:shadow-xl transition-theme-color shadow-md transform-el-scale">View
                                     Projects</a>
                             </div>
                         </div>
