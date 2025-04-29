@@ -1,6 +1,18 @@
 import myFoto from "../assets/img/myFoto.jpg";
-import {FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaBootstrap, FaLaravel, FaDatabase} from "react-icons/fa";
+import {
+    FaHtml5,
+    FaCss3Alt,
+    FaJs,
+    FaReact,
+    FaGitAlt,
+    FaBootstrap,
+    FaLaravel,
+    FaDatabase,
+    FaCertificate
+} from "react-icons/fa";
 import {SiTypescript, SiTailwindcss} from "react-icons/si";
+import ContactComponent from "../components/ContactComponent.jsx";
+import {Link} from 'react-router-dom';
 
 // Допоміжний компонент для Skill
 function SkillCard({Icon, label, color}) {
@@ -33,10 +45,10 @@ export default function Home() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a href="#contact"
-                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 hover:shadow-xl transition-theme-color shadow-md transform-el-scale">Contact
+                                   className="btn-style transition-theme-color transform-el-scale">Contact
                                     Me</a>
                                 <a href="#projects"
-                                   className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 hover:shadow-xl transition-theme-color shadow-md transform-el-scale">View
+                                   className="btn-style transition-theme-color transform-el-scale">View
                                     Projects</a>
                             </div>
                         </div>
@@ -103,35 +115,43 @@ export default function Home() {
                         <div className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 transition-colors">
                             <div className="flex items-start gap-4">
                                 <div className="text-3xl text-blue-600">
-                                    <i className="fas fa-certificate"></i>
+                                    <FaCertificate className="text-blue-600 text-2xl"/>
+
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg">JavaScript Advanced</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">Udemy</p>
-                                    <p className="mt-2 text-sm">Completed December 2021</p>
-                                    <a href="#" className="text-blue-600 text-sm inline-block mt-2 hover:underline">View
-                                        Certificates</a>
+                                    <h3 className="font-bold text-lg">Frontend Developer</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">Ciklum, Prometheus</p>
+                                    <p className="mt-2 text-sm">Completed March 2023</p>
+                                    <Link
+                                        to="/certificates"
+                                        className="text-blue-600 text-sm inline-block mt-2 hover:underline"
+                                    >View
+                                        Certificates</Link>
                                 </div>
                             </div>
                         </div>
                         <div className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 transition-colors">
                             <div className="flex items-start gap-4">
                                 <div className="text-3xl text-blue-600">
-                                    <i className="fas fa-certificate"></i>
+                                    <FaCertificate className="text-blue-600 text-2xl"/>
                                 </div>
                                 <div>
-                                    <h3 className="font-bold text-lg">React - The Complete Guide</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">Coursera</p>
-                                    <p className="mt-2 text-sm">Completed March 2022</p>
-                                    <a href="#" className="text-blue-600 text-sm inline-block mt-2 hover:underline">View
-                                        Certificates</a>
+                                    <h3 className="font-bold text-lg">Full-stack developer</h3>
+                                    <p className="text-gray-600 dark:text-gray-400">CBS, ITVDN</p>
+                                    <p className="mt-2 text-sm">Completed December 2024</p>
+                                    <Link
+                                        to="/certificates"
+                                        className="text-blue-600 text-sm inline-block mt-2 hover:underline"
+                                    >View
+                                        Certificates</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/*Projects*/}
+                {/*Projects*/
+                }
                 <section id="projects" className="mb-16">
                     <h2 className="text-2xl font-bold mb-6">Highlighted Projects</h2>
                     <div className="grid md:grid-cols-2 gap-8">
@@ -189,7 +209,9 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/*<div id="contact-home-placeholder"></div>*/}
+                <section id="contact">
+                    <ContactComponent/>
+                </section>
 
             </div>
         </>

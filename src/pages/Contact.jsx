@@ -1,4 +1,15 @@
 
+import ContactComponent from '../components/ContactComponent.jsx';
 
-// put contactComponent from ./components/contactComponent.jsx
-<div id="contact-contact-placeholder"></div>
+
+/**
+ * @returns {JSX.Element}
+ */
+
+export default function Layout() {
+    return (
+        <>
+            <ContactComponent />
+        </>
+    );
+}
