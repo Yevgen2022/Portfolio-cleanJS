@@ -1,0 +1,24 @@
+export default function Footer()
+{
+    return (
+        <footer
+            className="bg-white text-center p-6 border-t text-gray-500 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 transition-theme-color">
+            <div className="max-w-6xl mx-auto">
+                <div className="flex justify-center space-x-6 mb-4">
+                    <a href="https://github.com/Yevgen2022?tab=repositories" target="_blank"
+                       className="text-gray-400 hover:text-blue-600">
+                        <i className="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yevhen-oshkukov-436973254/" target="_blank"
+                       className="text-gray-400 hover:text-blue-600">
+                        <i className="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="mailto:sy.yevhen.lc@gmail.com" className="text-gray-400 hover:text-blue-600">
+                        <i className="far fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                <p>&copy; 2025 Yevhen Oshkukov — Frontend Developer</p>
+            </div>
+        </footer>
+    )
+}

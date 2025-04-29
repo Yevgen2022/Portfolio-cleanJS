@@ -17,7 +17,7 @@
         <h1 class="text-2xl font-bold">Yevhen Oshkukov</h1>
         <nav class="space-x-4 text-sm font-medium">
             <a href="index.html" class="hover:text-blue-600">Home</a>
-            <a href="contact.html" class="hover:text-blue-600">Contact</a>
+            <a href="Contact.jsx" class="hover:text-blue-600">Contact</a>
         </nav>
     </div>
 </header>

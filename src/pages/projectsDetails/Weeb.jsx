@@ -12,7 +12,7 @@
 
         <div class="space-y-8">
 
-            <!--      Technologies      -->
+            {/*Technologies*/}
             <div>
                 <h3 class="project-detail-h3">Technologies Used:</h3>
                 <ul class="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400">
@@ -25,7 +25,7 @@
             </div>
 
 
-            <!--    Goal        -->
+            {/*Goal*/}
             <div>
                 <h3 class="project-detail-h3">The goal of this project is to develop a landing page that:</h3>
                 <ul class="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400">
@@ -37,7 +37,7 @@
             </div>
 
 
-            <!--    Links        -->
+            {/*Links */}
             <div>
                 <h3 class="project-detail-h3">Links:</h3>
                 <ul class="list-inside ml-4 text-blue-600 dark:text-blue-400">
