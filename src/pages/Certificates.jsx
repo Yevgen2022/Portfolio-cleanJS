@@ -1,64 +1,3 @@
-//
-//
-//
-// // Main Content
-// <div class="max-w-6xl mx-auto py-20">
-//     <section>
-//
-//         <div class="flex items-center justify-between mb-8">
-//             <h2 class="text-3xl font-bold border-b pb-2 border-gray-300 dark:border-gray-700">Certificates</h2>
-//             <button id="toggleView" class="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition">
-//                 <svg id="toggleIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-//                      stroke="currentColor">
-//                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-//                 </svg>
-//             </button>
-//         </div>
-//
-//         {/*Certificate Container*/}
-//         {/* <div id="certContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">*/}
-//         {/*    Certificate Card Example **/}
-//         {/*   <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">*/}
-//         {/*        <img src="../img/TP05313424.pdf" alt="Certificate 1" class="w-full h-48 object-cover rounded mb-4">*/}
-//         {/*        <h3 class="text-lg font-semibold">Full-Stack Web Development</h3>*/}
-//         {/*      <p class="text-sm text-gray-600 dark:text-gray-400">CBS, ITVDN 2024</p>*/}
-//         {/*    </div>*/}
-//         <div>
-//             <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">
-//                 <img src="src/assets/img/htmlcss.png" alt="Certificate 1" class="w-full h-48 object-cover rounded mb-4">
-//                     <h3 class="text-lg font-semibold">HTML, CSS Development</h3>
-//                     <p class="text-sm text-gray-600 dark:text-gray-400">CBS, ITVDN 2024</p>
-//             </div>
-//
-//             <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">
-//                 <img src="../img/Ciklum.png" alt="Certificate 2" class="w-full h-48 object-cover rounded mb-4">
-//                     <h3 class="text-lg font-semibold">Frontend Developer</h3>
-//                     <p class="text-sm text-gray-600 dark:text-gray-400">Ciklum, Prometheus 2023</p>
-//             </div>
-//
-//             <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">
-//                 <img src="../img/TestEngineer.png" alt="Certificate 3" class="w-full h-48 object-cover rounded mb-4">
-//                     <h3 class="text-lg font-semibold">QA/QC Engineer</h3>
-//                     <p class="text-sm text-gray-600 dark:text-gray-400">Dotli-online university, 2022</p>
-//             </div>
-//
-//             <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">
-//                 <img src="../img/Green%20Forest%20Certificate(B2).png" alt="Certificate 3"
-//                      class="w-full h-48 object-cover rounded mb-4">
-//                     <h3 class="text-lg font-semibold">English course B2 level</h3>
-//                     <p class="text-sm text-gray-600 dark:text-gray-400">Green Forest, 2025</p>
-//             </div>
-//
-//             <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center">
-//                 <img src="../img/Green%20Forest%20Certificate(B1).PNG" alt="Certificate 3"
-//                      class="w-full h-48 object-cover rounded mb-4">
-//                     <h3 class="text-lg font-semibold">English course B1 level</h3>
-//                     <p class="text-sm text-gray-600 dark:text-gray-400">Green Forest, 2024</p>
-//             </div>
-//         </div>
-//     </section>
-// </div>
-
 import { useState } from "react";
 
 import htmlcssCert from "../assets/img/htmlcss.png";
@@ -103,7 +42,6 @@ export default function Certificates() {
                             stroke="currentColor"
                         >
                             {isGrid ? (
-                                // Іконка для сітки
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -111,7 +49,6 @@ export default function Certificates() {
                                     d="M4 6h16M4 12h16M4 18h16"
                                 />
                             ) : (
-                                // Іконка для списку
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -123,25 +60,29 @@ export default function Certificates() {
                     </button>
                 </div>
 
-                {/* Контейнер сертифікатів */}
-                <div className={isGrid ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6"}>
+                {/* correctly opened container */}
+                <div
+                    className={`transition-all duration-500 ${
+                        isGrid ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6"
+                    }`}
+                >
                     {certificates.map((cert, index) => (
                         <div
                             key={index}
-                            className={
+                            className={`bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex ${
                                 isGrid
-                                    ? "bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-col items-center text-center"
-                                    : "bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex flex-row items-center gap-4"
-                            }
+                                    ? "flex-col items-center text-center"
+                                    : "flex-row items-center gap-4"
+                            } transition-transform duration-300 transform hover:scale-105`}
                         >
                             <img
                                 src={cert.img}
                                 alt={cert.title}
-                                className={
+                                className={`rounded object-cover ${
                                     isGrid
-                                        ? "w-full h-48 object-cover rounded mb-4"
-                                        : "w-48 h-32 object-cover rounded"
-                                }
+                                        ? "w-full h-48 mb-4"
+                                        : "w-48 h-32"
+                                } transition-transform duration-300 transform hover:scale-105`}
                             />
                             <div>
                                 <h3 className="text-lg font-semibold">{cert.title}</h3>
@@ -154,3 +95,4 @@ export default function Certificates() {
         </div>
     );
 }
+
