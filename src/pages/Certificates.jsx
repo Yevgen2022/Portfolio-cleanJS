@@ -78,7 +78,7 @@ export default function Certificates() {
                             <img
                                 src={cert.img}
                                 alt={cert.title}
-                                className={`rounded object-cover ${
+                                className={`rounded object-contain ${
                                     isGrid
                                         ? "w-full h-48 mb-4"
                                         : "w-48 h-32"

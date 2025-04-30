@@ -108,7 +108,7 @@ export default function Contact() {
 
                         <button
                             type="submit"
-                            className="btn-style transition-theme-color transform-el-scale"
+                            className="btn-style"
                         >
                             Send Message
                         </button>

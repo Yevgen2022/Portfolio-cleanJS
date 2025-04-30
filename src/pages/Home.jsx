@@ -45,10 +45,10 @@ export default function Home() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a href="#contact"
-                                   className="btn-style transition-theme-color transform-el-scale">Contact
+                                   className="btn-style">Contact
                                     Me</a>
                                 <a href="#projects"
-                                   className="btn-style transition-theme-color transform-el-scale">View
+                                   className="btn-style">View
                                     Projects</a>
                             </div>
                         </div>
