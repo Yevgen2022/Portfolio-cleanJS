@@ -1,0 +1,71 @@
+[
+  {
+    "id": "weeb",
+    "type": "landing",
+    "title": "Weeb Website",
+    "description": "Responsive landing page for a product based on a mock-up with Figma.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "Figma", "Media Queries"],
+    "goals": [
+      "Implements designs created in Figma using modern web technologies.",
+      "Meets all the requirements of responsive design.",
+      "Provides fast loading on all devices.",
+      "Intuitive and user-friendly layout."
+    ],
+    "links": [
+      {
+        "label": "GitHub Repository",
+        "url": "https://github.com/Yevgen2022/responsive-site-figma-weeb"
+      },
+      {
+        "label": "Live Demo",
+        "url": "https://yevgen2022.github.io/responsive-site-figma-weeb/"
+      }
+    ]
+  },
+  {
+    "id": "task-manager",
+    "type": "frontend-app",
+    "title": "Task Manager App",
+    "description": "Full-stack task manager with JWT authentication and protected routes.",
+    "technologies": ["React", "Redux Toolkit", "Tailwind CSS", "React Router", "Formik"],
+    "features": [
+      "User authentication with JWT",
+      "CRUD operations for tasks",
+      "Pagination and filtering",
+      "Responsive design"
+    ],
+    "challenges": [
+      "JWT token management and protected routes",
+      "Complex state handling with Redux Toolkit",
+      "Form validation and error handling"
+    ],
+    "repoLink": "https://github.com/Yevgen2022/task-manager-app",
+    "liveDemo": "https://task-manager-app-demo.vercel.app"
+  },
+  {
+    "id": "weather-api",
+    "type": "backend-app",
+    "title": "Weather API Backend",
+    "description": "REST API backend for weather forecast using OpenWeather and Node.js.",
+    "techStack": ["Node.js", "Express", "MongoDB", "JWT", "OpenWeather API"],
+    "architecture": "MVC + RESTful API. Environment variables for API keys, structured routing.",
+    "endpoints": [
+      "/api/weather/current",
+      "/api/weather/forecast",
+      "/api/auth/register",
+      "/api/auth/login"
+    ],
+    "security": [
+      "JWT-based authentication and authorization",
+      "Input validation with express-validator",
+      "Rate limiting and CORS handling"
+    ],
+    "challenges": [
+      "External API error handling",
+      "Securing endpoints",
+      "Environment configuration for deployment"
+    ],
+    "repoLink": "https://github.com/Yevgen2022/weather-api-backend",
+    "demoLink": "https://weather-api-backend.onrender.com"
+  }
+]

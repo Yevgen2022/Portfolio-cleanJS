@@ -74,16 +74,13 @@
 
 @layer components {
 
-    html{
-       @apply min-h-screen;
-    }
 
     #root{
         @apply min-h-screen flex flex-col;
     }
 
     .body-style {
-        @apply min-h-screen flex flex-col bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-200  font-sans scroll-smooth;
+        @apply bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-200 font-sans scroll-smooth;
     }
 
 
