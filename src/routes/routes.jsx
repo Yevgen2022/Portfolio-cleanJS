@@ -13,12 +13,11 @@ const routes = [
         element: <Layout />,
         children: [
             { path: '', element: <Home /> },
-            { path: 'projects.json', element: <Projects /> },
+            { path: 'projects', element: <Projects /> },
             { path: 'education', element: <Education /> },
             { path: 'resume', element: <Resume /> },
              { path: 'contact', element: <Contact /> },
             { path: 'certificates', element: <Certificates /> },
-            // { path: 'projects.json/:id', element: <ProjectDetails /> },
             { path: 'projects.json/weeb', element: <Weeb /> },
         ],
     },
