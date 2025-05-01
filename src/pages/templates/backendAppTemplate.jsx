@@ -60,3 +60,50 @@ export function BackendAppTemplate({ title, description, techStack, architecture
         </div>
     );
 }
+
+{/* Links */}
+// <div>
+//     <h3 className="project-detail-h3">Links:</h3>
+//     <ul className="list-inside ml-4 text-blue-600 dark:text-blue-400 space-y-2">
+//         {repoLink && (
+//             <li>
+//                 <a
+//                     href={repoLink}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className="hover:underline"
+//                 >
+//                     GitHub Repository
+//                 </a>
+//             </li>
+//         )}
+//
+//         {demoLink ? (
+//             <li>
+//                 <a
+//                     href={demoLink}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className="hover:underline"
+//                 >
+//                     Live Demo / Swagger
+//                 </a>
+//             </li>
+//         ) : videoDemo ? (
+//             <li>
+//                 <a
+//                     href={videoDemo}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className="hover:underline"
+//                 >
+//                     Watch Demo Video
+//                 </a>
+//             </li>
+//         ) : (
+//             <li className="text-sm italic text-gray-500 dark:text-gray-400">
+//                 No demo available. Please see README for setup instructions.
+//             </li>
+//         )}
+//     </ul>
+// </div>

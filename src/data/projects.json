@@ -23,49 +23,55 @@
     ]
   },
   {
-    "id": "task-manager",
+    "id": "react-todo",
     "type": "frontend-app",
-    "title": "Task Manager App",
-    "description": "Full-stack task manager with JWT authentication and protected routes.",
-    "technologies": ["React", "Redux Toolkit", "Tailwind CSS", "React Router", "Formik"],
+    "title": "React Todo App",
+    "description": "A simple todo application built with React that allows users to manage their daily tasks.",
+    "technologies": ["React", "JavaScript", "CSS", "Local State", "Modal UI"],
     "features": [
-      "User authentication with JWT",
-      "CRUD operations for tasks",
-      "Pagination and filtering",
-      "Responsive design"
+      "Add, edit, and delete tasks",
+      "Filter tasks by completion status",
+      "Sort tasks by date or title",
+      "Modal popup for editing tasks",
+      "Responsive design using CSS"
     ],
     "challenges": [
-      "JWT token management and protected routes",
-      "Complex state handling with Redux Toolkit",
-      "Form validation and error handling"
+      "Managing local component state for multiple interactions",
+      "Implementing controlled forms and validation",
+      "Creating a clean and accessible modal for editing tasks",
+      "Handling dynamic list rendering and updates"
     ],
-    "repoLink": "https://github.com/Yevgen2022/task-manager-app",
-    "liveDemo": "https://task-manager-app-demo.vercel.app"
+    "repoLink": "https://github.com/Yevgen2022/ReactTodo",
+    "liveDemo": "https://yevgen2022.github.io/ReactTodo/"
   },
   {
-    "id": "weather-api",
+    "id": "sincos-admin",
     "type": "backend-app",
-    "title": "Weather API Backend",
-    "description": "REST API backend for weather forecast using OpenWeather and Node.js.",
-    "techStack": ["Node.js", "Express", "MongoDB", "JWT", "OpenWeather API"],
-    "architecture": "MVC + RESTful API. Environment variables for API keys, structured routing.",
+    "title": "Sincos Admin Panel",
+    "description": "Admin dashboard application built with Laravel and Blade templates to manage products and users.",
+    "techStack": ["Laravel", "Blade", "Tailwind CSS", "Laravel Auth", "Resource Controllers", "DummyJSON API"],
+    "architecture": "MVC pattern with server-side rendering using Blade. RESTful routing and resource controllers for clean backend logic.",
     "endpoints": [
-      "/api/weather/current",
-      "/api/weather/forecast",
-      "/api/auth/register",
-      "/api/auth/login"
+      "/products (GET, POST, PUT, DELETE)",
+      "/users (GET, POST, PUT, DELETE)",
+      "/login",
+      "/register"
     ],
     "security": [
-      "JWT-based authentication and authorization",
-      "Input validation with express-validator",
-      "Rate limiting and CORS handling"
+      "Laravel built-in authentication and middleware",
+      "CSRF protection",
+      "Role-based access control (admin/user)"
     ],
     "challenges": [
-      "External API error handling",
-      "Securing endpoints",
-      "Environment configuration for deployment"
+      "Customizing Blade layouts and partials for UI consistency",
+      "Integrating Tailwind with Laravel asset pipeline",
+      "Implementing secure CRUD operations for users and products",
+      "Consuming external DummyJSON API for dynamic content",
+      "Configuring and styling Laravel's pagination with Tailwind"
     ],
-    "repoLink": "https://github.com/Yevgen2022/weather-api-backend",
-    "demoLink": "https://weather-api-backend.onrender.com"
+    "repoLink": "https://github.com/Yevgen2022/Sincos",
+    "demoLink": "null"
+
   }
+
 ]

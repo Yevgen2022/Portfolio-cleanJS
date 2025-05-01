@@ -49,7 +49,7 @@
 //                 <li>Implemented REST API integration (Axios/fetch), routing (Vue Router/React Router), and
 //                     authentication flows.
 //                 </li>
-//                 <li>Developed internal tools and training projects under senior mentorship.</li>
+//                 <li>Developed internal tools and training projects.json under senior mentorship.</li>
 //                 <li>Assisted in backend tasks: creating Laravel routes, Blade views, and controllers using MVC
 //                     principles.
 //                 </li>
@@ -67,7 +67,7 @@
 //             <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
 //                 <li>Completed comprehensive front-end development courses, focusing on JavaScript,<span
 //                         class="block ml-5"> TypeScript, React, Redux, HTML5, CSS3, Tailwind CSS, and Git.</span></li>
-//                 <li>Built and deployed multiple projects (portfolio site, to-do app, weather app) using React and modern
+//                 <li>Built and deployed multiple projects.json (portfolio site, to-do app, weather app) using React and modern
 //                     tooling.
 //                 </li>
 //                 <li>Integrated APIs like TMDB and OpenWeather, implemented routing, state management with Redux, and
