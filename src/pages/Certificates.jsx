@@ -1,10 +1,11 @@
-import { useState } from "react";
+import {useState} from "react";
 
 import htmlcssCert from "../assets/img/htmlcss.png";
 import ciklumCert from "../assets/img/Ciklum.png";
 import testEngineerCert from "../assets/img/TestEngineer.png";
 import greenForestB2Cert from "../assets/img/Green Forest Certificate(B2).png";
 import greenForestB1Cert from "../assets/img/Green Forest Certificate(B1).PNG";
+import {FaTh, FaList} from 'react-icons/fa';
 
 export default function Certificates() {
     const [isGrid, setIsGrid] = useState(true);
@@ -13,50 +14,30 @@ export default function Certificates() {
         setIsGrid((prev) => !prev);
     };
 
-    // Дані сертифікатів
+    // Certificate data
     const certificates = [
-        { img: htmlcssCert, title: "HTML, CSS Development", desc: "CBS, ITVDN 2024" },
-        { img: ciklumCert, title: "Frontend Developer", desc: "Ciklum, Prometheus 2023" },
-        { img: testEngineerCert, title: "QA/QC Engineer", desc: "Dotli-online university, 2022" },
-        { img: greenForestB2Cert, title: "English course B2 level", desc: "Green Forest, 2025" },
-        { img: greenForestB1Cert, title: "English course B1 level", desc: "Green Forest, 2024" },
+        {img: htmlcssCert, title: "HTML, CSS Development", desc: "CBS, ITVDN 2024"},
+        {img: ciklumCert, title: "Frontend Developer", desc: "Ciklum, Prometheus 2023"},
+        {img: testEngineerCert, title: "QA/QC Engineer", desc: "Dotli-online university, 2022"},
+        {img: greenForestB2Cert, title: "English course B2 level", desc: "Green Forest, 2025"},
+        {img: greenForestB1Cert, title: "English course B1 level", desc: "Green Forest, 2024"},
     ];
 
     return (
         <div className="max-w-6xl mx-auto py-20">
             <section>
+
                 <div className="flex items-center justify-between mb-8">
                     <h2 className="text-3xl font-bold border-b pb-2 border-gray-300 dark:border-gray-700">
                         Certificates
                     </h2>
+
                     <button
                         onClick={toggleView}
                         className="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition"
                         aria-label="Toggle View"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            {isGrid ? (
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                />
-                            ) : (
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16"
-                                />
-                            )}
-                        </svg>
+                        {isGrid ? <FaTh size={24}/> : <FaList size={24}/>}
                     </button>
                 </div>
 
@@ -81,7 +62,7 @@ export default function Certificates() {
                                 className={`rounded object-contain ${
                                     isGrid
                                         ? "w-full h-48 mb-4"
-                                        : "w-48 h-32"
+                                        : "w-64 h-32"
                                 } transition-transform duration-300 transform hover:scale-105`}
                             />
                             <div>
