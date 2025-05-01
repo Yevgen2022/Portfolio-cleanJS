@@ -11,16 +11,8 @@
       "Provides fast loading on all devices.",
       "Intuitive and user-friendly layout."
     ],
-    "links": [
-      {
-        "label": "GitHub Repository",
-        "url": "https://github.com/Yevgen2022/responsive-site-figma-weeb"
-      },
-      {
-        "label": "Live Demo",
-        "url": "https://yevgen2022.github.io/responsive-site-figma-weeb/"
-      }
-    ]
+      "repoLink": "https://github.com/Yevgen2022/responsive-site-figma-weeb",
+      "liveDemo": "https://yevgen2022.github.io/responsive-site-figma-weeb/"
   },
   {
     "id": "react-todo",
@@ -70,7 +62,7 @@
       "Configuring and styling Laravel's pagination with Tailwind"
     ],
     "repoLink": "https://github.com/Yevgen2022/Sincos",
-    "demoLink": "null"
+    "demoLink": ""
 
   }
 

@@ -1,5 +1,15 @@
 // === BACKEND APP TEMPLATE ===
-export function BackendAppTemplate({ title, description, techStack, architecture, endpoints, security, challenges, repoLink, demoLink }) {
+export function BackendAppTemplate({
+                                       title,
+                                       description,
+                                       techStack,
+                                       architecture,
+                                       endpoints,
+                                       security,
+                                       challenges,
+                                       repoLink,
+                                       demoLink
+                                   }) {
     return (
         <div className="max-w-4xl mx-auto px-6 py-20">
             <section>
@@ -51,8 +61,30 @@ export function BackendAppTemplate({ title, description, techStack, architecture
                     <div>
                         <h3 className="project-detail-h3">Links:</h3>
                         <ul className="list-inside ml-4 text-blue-600 dark:text-blue-400">
-                            <li><a href={repoLink} target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub Repository</a></li>
-                            <li><a href={demoLink} target="_blank" rel="noopener noreferrer" className="hover:underline">Live Demo / Swagger</a></li>
+                            <li><a href={repoLink} target="_blank" rel="noopener noreferrer"
+                                   className="hover:underline">GitHub Repository</a></li>
+                            {/*<li><a href={demoLink} target="_blank" rel="noopener noreferrer" className="hover:underline">Live Demo / Swagger</a></li>*/}
+                            <li className="flex items-center gap-2">
+                                {demoLink ? (
+                                    <a
+                                        href={demoLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:underline text-blue-600 dark:text-blue-400"
+                                    >
+                                        Live Demo / Swagger
+                                    </a>
+                                ) : (
+                                    <>
+                                  <span className="text-gray-400 cursor-not-allowed select-none">
+                                   Live Demo / Swagger
+                                  </span>
+                                        <span className="text-sm text-gray-500 italic">Live Demo Coming Soon</span>
+                                    </>
+                                )}
+                            </li>
+
+
                         </ul>
                     </div>
                 </div>
@@ -61,7 +93,8 @@ export function BackendAppTemplate({ title, description, techStack, architecture
     );
 }
 
-{/* Links */}
+{/* Links */
+}
 // <div>
 //     <h3 className="project-detail-h3">Links:</h3>
 //     <ul className="list-inside ml-4 text-blue-600 dark:text-blue-400 space-y-2">

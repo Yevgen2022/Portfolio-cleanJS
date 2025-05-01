@@ -1,10 +1,11 @@
 // components/templates/LandingTemplate.jsx
-export default function LandingTemplate({
+export function LandingTemplate({
                                             title,
                                             description,
                                             technologies = [],
                                             goals = [],
-                                            links = [],
+                                            repoLink,
+                                            liveDemo
                                         }) {
     return (
         <div className="max-w-4xl mx-auto px-6 py-20">
@@ -42,18 +43,8 @@ export default function LandingTemplate({
                     <div>
                         <h3 className="project-detail-h3">Links:</h3>
                         <ul className="list-inside ml-4 text-blue-600 dark:text-blue-400">
-                            {links.map((link, index) => (
-                                <li key={index}>
-                                    <a
-                                        href={link.href}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="hover:underline"
-                                    >
-                                        {link.label}
-                                    </a>
-                                </li>
-                            ))}
+                            <li><a href={repoLink} target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub Repository</a></li>
+                            <li><a href={liveDemo} target="_blank" rel="noopener noreferrer" className="hover:underline">Live Demo</a></li>
                         </ul>
                     </div>
                 </div>

@@ -25,7 +25,6 @@ export default function Projects() {
                             className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between transition-colors duration-500"
                         >
                             <div>
-                                {/*<h3 className="text-xl font-semibold mb-4">{project.title}</h3>*/}
                                 <div className="flex items-center justify-between mb-4">
                                     <h3 className="text-xl font-semibold">{project.title}</h3>
                                     <span
@@ -38,7 +37,7 @@ export default function Projects() {
                                 </p>
                             </div>
                             <button
-                                onClick={() => handleViewDetails(project.name)}
+                                onClick={() => handleViewDetails(project.id)}
                                 className="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-300 w-full"
                             >
                                 View Details

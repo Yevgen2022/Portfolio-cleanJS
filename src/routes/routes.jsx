@@ -3,9 +3,9 @@ import Home from '../pages/Home';
 import Projects from '../pages/Projects';
 import Education from '../pages/Education';
 import Resume from '../pages/Resume';
- import Contact from '../pages/Contact';
+import Contact from '../pages/Contact';
 import Certificates from '../pages/Certificates';
-// import Weeb from '../pages/projectsDetails/Weeb';
+import ProjectsDetails from '../pages/projectsDetails/ProjectsDetails';
 
 const routes = [
     {
@@ -18,7 +18,7 @@ const routes = [
             { path: 'resume', element: <Resume /> },
              { path: 'contact', element: <Contact /> },
             { path: 'certificates', element: <Certificates /> },
-            // { path: 'projectsData.json/weeb', element: <Weeb /> },
+            { path: 'projects/:id', element: <ProjectsDetails /> },
         ],
     },
 ];
