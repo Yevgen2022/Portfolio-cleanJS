@@ -66,7 +66,7 @@
   },
   {
     "id": "accessibility-semantic",
-    "type": "landing",
+    "type": "educational",
     "title": "Accessibility fundamentals and HTML semantic",
     "description": "A learning-focused landing page project aimed at applying accessibility principles and semantic HTML structure.",
     "technologies": ["HTML5", "CSS3", "Semantic Tags", "Accessibility", "ARIA", "Alt Attributes"],
@@ -81,7 +81,198 @@
     ],
     "repoLink": "https://gitlab.com/Yevhen2022/accessibility-fundamentals-and-html-semantic",
     "liveDemo": "https://accessibility-fundamentals-and-html-semantic-ef3f07.gitlab.io"
+  },
+  {
+    "id": "css-animation",
+    "type": "educational",
+    "title": "CSS Transform and Animation Playground",
+    "description": "A learning-focused landing page project showcasing advanced use of CSS animations and transform/transition techniques across 10 distinct visual blocks.",
+    "technologies": ["HTML5", "CSS3", "Keyframes", "Transform", "Transition", "Animation Timing", "GitLab Pages"],
+    "goals": [
+      "Created a 'bgcolor' animation for background-color transition over 5 seconds using custom keyframes.",
+      "Implemented 'bgcolor2' animation with multiple color transitions at defined keyframe percentages.",
+      "Built 'blockmove' animation to move the block through a square path using left and top properties.",
+      "Created 'blockcolormove' combining position and color animation, with delay, repetition, and reset.",
+      "Designed 'showhide' animation to loop opacity from 1 to 0 infinitely.",
+      "Reused 'blockmove' on a new block with reverse direction and adjusted duration.",
+      "Applied 'blockcolormove' in alternate-reverse infinite mode with faster speed.",
+      "Introduced 'moveleft' animation to shift blocks horizontally using left property.",
+      "Modified 'moveleft' to run with constant linear speed.",
+      "Applied 'moveleft' with easing (`ease-out`) and final keyframe persistence (`forwards`)."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/css-animations",
+    "liveDemo": "https://css-animations-ab70d1.gitlab.io"
+  },
+  {
+    "id": "css-float-layout",
+    "type": "educational",
+    "title": "CSS Float Layout and Multi-Column Design",
+    "description": "A layout-focused landing page project built using CSS float-based structure and multi-column techniques, following a strict mock-up specification.",
+    "technologies": ["HTML5", "CSS3", "Float", "Box Model", "Multi-column Layout", "GitLab Pages"],
+    "goals": [
+      "Positioned <aside> on the right and <main> on the left using CSS float properties.",
+      "Applied fixed width values to header, footer, main, and aside to follow the mock-up layout.",
+      "Made the .header_line section stay fixed at the top of the page using position: fixed and top: 0.",
+      "Changed box-sizing model globally using body selector to include paddings and borders in element dimensions.",
+      "Used CSS multi-column layout (column-count and column-gap) to split content in .client_stories into three columns with 20px gap.",
+      "Applied column-span: all to h2 headings to span across all columns in multi-column layout."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/css-layout-basics",
+    "liveDemo": "https://css-layout-basics-423724.gitlab.io"
+  },
+  {
+    "id": "css-selectors-task",
+    "type": "educational",
+    "title": "CSS Selectors Task",
+    "description": "A learning-focused CSS project that applies a wide range of selectors including basic, combinator, pseudo-classes, and pseudo-elements, all within a strict HTML structure.",
+    "technologies": ["HTML5", "CSS3", "Selectors", "Combinators", "Pseudo-classes", "Pseudo-elements", "GitLab Pages"],
+    "goals": [
+      "Styled the <body> tag with a global font stack including Arial, Helvetica, and sans-serif.",
+      "Applied padding and a dark blue border to the #main-header element.",
+      "Styled .main-heading with italic font and underlined dotted text decoration.",
+      "Added spacing to all <section> elements using padding and margin-top.",
+      "Styled specific sections (.tech, .spaceflight, .science-astronomy) with custom borders using class selectors.",
+      "Targeted nested <h2> inside .tech and styled them with dark grey color.",
+      "Styled a direct child <h2> of <header> with left padding and border.",
+      "Applied a border to a <nav> that directly follows an <h1>.",
+      "Styled .main-footer when it follows #main-header at the same DOM level using general sibling selector.",
+      "Styled a <ul> that is a direct child of .main-navigation with list reset and padding.",
+      "Applied different borders to the first and last <li> items in an <ol>.",
+      "Styled <a> tags inside .main-footer on hover with yellowgreen text color.",
+      "Applied yellow background on focused <a> links.",
+      "Added ::before pseudo-element to <h2> inside .tech with '🤖' content.",
+      "Added ::after pseudo-element to direct child <h2> in .spaceflight with '🚀' content."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/css-selectors",
+    "liveDemo": "https://css-selectors-abc06f.gitlab.io"
+  },
+  {
+    "id": "html-forms-elements",
+    "type": "educational",
+    "title": "HTML Forms and Interactive Elements",
+    "description": "A structured HTML form created with semantic and accessible markup, demonstrating label associations, grouped inputs, datalist usage, and collapsible sections using <details>.",
+    "technologies": ["HTML5", "Forms", "Labels", "Fieldset", "Datalist", "Semantic Elements", "Accessibility", "GitLab Pages"],
+    "goals": [
+      "Wrapped each input and its label text inside <label> tags for proper semantic structure.",
+      "Added specific name attributes to each <input> including full-name, address, and email.",
+      "Set the correct input type for the email field.",
+      "Grouped degree radio inputs inside <fieldset> with a <legend> element titled 'University Degree'.",
+      "Assigned value and name attributes to each degree option (military, technical, student).",
+      "Added a <textarea> inside #bio-p and linked it to a <label> using id and for attributes.",
+      "Created a collapsible section using <details> and <summary> with the correct expandable content.",
+      "Added a color picker input inside #uniform-color-p with appropriate label and name.",
+      "Created a text input inside #preferred-mission-role-p linked to a <datalist> with ordered role options.",
+      "Added a checkbox inside #agree-and-submit wrapped with label 'I agree on terms and conditions'.",
+      "Inserted a <button> of type='submit' with label 'Send your data to NASA'."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/html-forms-and-interactive-elements",
+    "liveDemo": "https://html-forms-and-interactive-elements-3ac058.gitlab.io"
+  },
+  {
+    "id": "html-text-elements",
+    "type": "educational",
+    "title": "HTML Text elements",
+    "description": "A project focused on transforming raw HTML content into fully semantic and accessible structure using correct headings, lists, date/time, and formatting tags.",
+    "technologies": ["HTML5", "Semantic Tags", "Abbreviation", "Quote", "Time", "Lists", "GitLab Pages"],
+    "goals": [
+      "Replaced generic <div> elements with proper headings: <h1> for page title, <h2> for articles, and <h3> for sections.",
+      "Added ordered and unordered lists for crew members and flight directors to reflect actual data.",
+      "Marked a specific date and time with a <time> tag including datetime attribute: 1969-07-20T20:17:00.000Z.",
+      "Wrapped NASA acronym with <abbr> tag and full form via title attribute.",
+      "Used <blockquote> and <cite> to semantically tag John F. Kennedy's historical quote and its source.",
+      "Emphasized Armstrong’s quote using <em> and marked citation link with <sup>.",
+      "Italicized three distinct text fragments to highlight secondary or stylistic meaning."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/html-text-elements",
+    "liveDemo": "https://html-text-elements-b877e4.gitlab.io"
+  },
+  {
+    "id": "styling-fundamentals",
+    "type": "educational",
+    "title": "Styling Fundamentals",
+    "description": "A beginner-level project focused on applying CSS styling through external, internal, and inline methods, with practice on typography, layout, and links.",
+    "technologies": ["HTML5", "CSS3", "Inline Style", "Internal Style", "External Stylesheet", "Typography", "GitLab Pages"],
+    "goals": [
+      "Linked an external stylesheet (style.css) in the <head> using a properly formed <link> tag.",
+      "Added a <style> tag as the first child of <body> containing rules for <nav> layout and borders.",
+      "Applied an inline style to the <h2> inside <nav> with text-transform and text-decoration.",
+      "Styled <body> with Arial/Helvetica font stack and 16px font size.",
+      "Styled all <h2> tags with 1.5rem size and #303030 color.",
+      "Styled all <p> tags with 18px font size.",
+      "Applied bold, italic, darkslategrey text to elements with class .quote.",
+      "Added a 5px slateblue border to the element with id #main-image.",
+      "Styled ordered lists with upper-roman list style.",
+      "Styled all links: default color dodgerblue, visited color violet, hover color mediumseagreen."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/introduction-to-css-basics",
+    "liveDemo": "https://introduction-to-css-basics-35662b.gitlab.io"
+  },
+  {
+    "id": "navigation-and-image",
+    "type": "educational",
+    "title": "Navigation and Images",
+    "description": "A dual-purpose project that implements a semantic navigation menu and a responsive image layout using the <picture> element and media queries.",
+    "technologies": ["HTML5", "Navigation", "Anchor Links", "Responsive Images", "<picture>", "Media Queries", "GitLab Pages"],
+    "goals": [
+      "Created a navigation menu inside the <header> with four links in a strict order: Home, About, Gallery, and Help.",
+      "Linked Home to index.html, Gallery to gallery.html, and Help to https://www.w3.org/ using target='_blank'.",
+      "Linked About using a fragment identifier (anchor) to id='about' on the same page.",
+      "Used the <picture> element inside gallery.html to display different images based on screen width.",
+      "Configured responsive image sources: pic1.jpg (≤ 480px), pic2.jpg (≤ 780px), pic3.jpg (≤ 1024px), pic4.jpg (default).",
+      "Included appropriate alt text 'Beauty of Nature' for accessibility."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/linking-and-images",
+    "liveDemo": "https://linking-and-images-800d6c.gitlab.io"
+  },
+  {
+    "id": "tabular-data-representation",
+    "type": "educational",
+    "title": "Tabular Data Representation",
+    "description": "A hands-on semantic HTML project that involves presenting structured shopping data in a table using correct markup, spanning, and grouping techniques.",
+    "technologies": ["HTML5", "Tables", "<thead>", "<tfoot>", "<colgroup>", "rowspan", "colspan", "Accessibility", "GitLab Pages"],
+    "goals": [
+      "Built a semantic HTML table using <table>, <caption>, <thead>, <tbody>, and <tfoot>.",
+      "Added a table caption: 'Shop list for 25th of May'.",
+      "Used <th scope='col'> for each column header to ensure accessibility.",
+      "Grouped 'Price' and 'Amount (kilo)' columns using <colgroup> and individual <col> elements.",
+      "Used rowspan='2' for the 'Name' column to span two rows vertically.",
+      "Created a visual grouping by merging three header cells into a single 'Purchases' label using colspan='3'.",
+      "Displayed a 'Total' row with colspan='2' to span across relevant cells in the footer."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/structuring-tabular-data",
+    "liveDemo": "https://structuring-tabular-data-f0b5ea.gitlab.io"
+  },
+  {
+    "id": "useful-css-rules",
+    "type": "educational",
+    "title": "Useful css rules",
+    "description": "A project that focuses on applying advanced CSS styling rules to sections, headers, quotes, contact icons, tables, and footer areas using gradients, shadows, pseudo-elements, and precise selectors.",
+    "technologies": ["HTML5", "CSS3", "Gradients", "Tables", "Pseudo-elements", "Text Effects", "GitLab Pages"],
+    "goals": [
+      "Styled .main-quote with custom margins, font styles, size, and color.",
+      "Applied a gradient background, purple fallback color, white text, and full padding to .main-header.",
+      "Used background image and padding for .avatar-figure and added solid border to its <img> child.",
+      "Styled .contacts list with padding, max width, white border, and white text; <li> items displayed inline.",
+      "Applied :visited and :active color styling to links with .contact class.",
+      "Used ::before pseudo-elements to add background icons for contact-phone, contact-inst, and contact-twitter.",
+      "Styled <h1> with bottom padding and border.",
+      "Added 2rem padding to all <section> tags and shadow to .summary section.",
+      "Set float, size, margin, and border-radius for .space element with layered background images.",
+      "Styled .work-experience section with top margin and applied 100% width + collapsed borders to <table>.",
+      "Defined column widths for .work-experience-* columns using <col>.",
+      "Styled <th> and <td> with spacing, alignment, and text color.",
+      "Styled <tfoot> <th> with right-aligned text and applied background/text shadow to <thead> and <tfoot>.",
+      "Styled <caption> with padding, italic, letter spacing, and right alignment, positioned at table bottom.",
+      "Applied gradient background, white text, and padding to .main-footer."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/useful-css-rules",
+    "liveDemo": "https://useful-css-rules-8995b7.gitlab.io"
   }
+
+
+
+
+
 
 
 ]
