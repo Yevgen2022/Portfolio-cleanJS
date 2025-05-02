@@ -17,6 +17,9 @@ export default function ProjectDetails() {
         case "landing":
             return <LandingTemplate {...project} />;
 
+        case "educational":
+            return <LandingTemplate {...project} />;
+
         case "frontend-app":
             return <FrontendAppTemplate {...project} />;
 
