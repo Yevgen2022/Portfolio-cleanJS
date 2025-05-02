@@ -22,13 +22,13 @@ export default function Projects() {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between transition-colors duration-500"
+                            className="relative bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between transition-colors duration-500"
                         >
                             <div>
                                 <div className="flex items-center justify-between mb-4">
                                     <h3 className="text-xl font-semibold">{project.title}</h3>
                                     <span
-                                        className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300 capitalize">
+                                        className="absolute top-6 right-6 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300 capitalize">
                                         {project.type.replace("-", " ")}
                                         </span>
                                 </div>

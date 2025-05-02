@@ -8,7 +8,7 @@ export function BackendAppTemplate({
                                        security,
                                        challenges,
                                        repoLink,
-                                       demoLink
+                                       liveDemo
                                    }) {
     return (
         <div className="max-w-4xl mx-auto px-6 py-20">
@@ -63,11 +63,11 @@ export function BackendAppTemplate({
                         <ul className="list-inside ml-4 text-blue-600 dark:text-blue-400">
                             <li><a href={repoLink} target="_blank" rel="noopener noreferrer"
                                    className="hover:underline">GitHub Repository</a></li>
-                            {/*<li><a href={demoLink} target="_blank" rel="noopener noreferrer" className="hover:underline">Live Demo / Swagger</a></li>*/}
+                            {/*<li><a href={liveDemo} target="_blank" rel="noopener noreferrer" className="hover:underline">Live Demo / Swagger</a></li>*/}
                             <li className="flex items-center gap-2">
-                                {demoLink ? (
+                                {liveDemo ? (
                                     <a
-                                        href={demoLink}
+                                        href={liveDemo}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="hover:underline text-blue-600 dark:text-blue-400"
@@ -83,8 +83,6 @@ export function BackendAppTemplate({
                                     </>
                                 )}
                             </li>
-
-
                         </ul>
                     </div>
                 </div>

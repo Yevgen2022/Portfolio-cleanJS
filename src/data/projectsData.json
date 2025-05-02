@@ -62,8 +62,26 @@
       "Configuring and styling Laravel's pagination with Tailwind"
     ],
     "repoLink": "https://github.com/Yevgen2022/Sincos",
-    "demoLink": ""
-
+    "liveDemo": ""
+  },
+  {
+    "id": "accessibility-semantic",
+    "type": "landing",
+    "title": "Accessibility fundamentals and HTML semantic",
+    "description": "A learning-focused landing page project aimed at applying accessibility principles and semantic HTML structure.",
+    "technologies": ["HTML5", "CSS3", "Semantic Tags", "Accessibility", "ARIA", "Alt Attributes"],
+    "goals": [
+      "Replaced non-semantic HTML tags with appropriate semantic elements such as <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer>.",
+      "Ensured only a single <h1> heading is used for the main article title, with proper heading hierarchy for all other titles.",
+      "Added descriptive alt text to all images to enhance screen reader accessibility.",
+      "Wrapped relevant images in <figure> and added <figcaption> for additional context.",
+      "Updated external links to open in new tabs using the target attribute, improving navigation for users.",
+      "Removed redundant role attributes where semantic elements already implied the role.",
+      "Reinforced best practices for modern, accessible web layout using real examples."
+    ],
+    "repoLink": "https://gitlab.com/Yevhen2022/accessibility-fundamentals-and-html-semantic",
+    "liveDemo": "https://accessibility-fundamentals-and-html-semantic-ef3f07.gitlab.io"
   }
+
 
 ]

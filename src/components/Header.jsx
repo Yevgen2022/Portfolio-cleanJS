@@ -176,7 +176,7 @@ export default function Header() {
                         {/* Theme toggle */}
                         <button
                             onClick={handleThemeToggle}
-                            className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                            className="p-2 mx-4 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
                             aria-label="Toggle Dark Mode"
                         >
                             <span className="block dark:hidden">🌞</span>
@@ -186,7 +186,7 @@ export default function Header() {
                         {/* Mobile menu toggle button */}
                         <button
                             onClick={toggleMobileMenu}
-                            className="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                            className="md:hidden p-2  rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
                             aria-label="Toggle Mobile Menu"
                         >
                             {/*<i className="fas fa-bars"></i>*/}
