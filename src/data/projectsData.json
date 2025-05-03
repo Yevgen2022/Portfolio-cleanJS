@@ -79,7 +79,7 @@
       "Removed redundant role attributes where semantic elements already implied the role.",
       "Reinforced best practices for modern, accessible web layout using real examples."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/accessibility-fundamentals-and-html-semantic",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/accessibility-fundamentals-and-html-semantic",
     "liveDemo": "https://accessibility-fundamentals-and-html-semantic-ef3f07.gitlab.io"
   },
   {
@@ -100,7 +100,7 @@
       "Modified 'moveleft' to run with constant linear speed.",
       "Applied 'moveleft' with easing (`ease-out`) and final keyframe persistence (`forwards`)."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/css-animations",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/css-animations",
     "liveDemo": "https://css-animations-ab70d1.gitlab.io"
   },
   {
@@ -117,7 +117,7 @@
       "Used CSS multi-column layout (column-count and column-gap) to split content in .client_stories into three columns with 20px gap.",
       "Applied column-span: all to h2 headings to span across all columns in multi-column layout."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/css-layout-basics",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/css-layout-basics",
     "liveDemo": "https://css-layout-basics-423724.gitlab.io"
   },
   {
@@ -143,7 +143,7 @@
       "Added ::before pseudo-element to <h2> inside .tech with '🤖' content.",
       "Added ::after pseudo-element to direct child <h2> in .spaceflight with '🚀' content."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/css-selectors",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/css-selectors",
     "liveDemo": "https://css-selectors-abc06f.gitlab.io"
   },
   {
@@ -165,7 +165,7 @@
       "Added a checkbox inside #agree-and-submit wrapped with label 'I agree on terms and conditions'.",
       "Inserted a <button> of type='submit' with label 'Send your data to NASA'."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/html-forms-and-interactive-elements",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/html-forms-and-interactive-elements",
     "liveDemo": "https://html-forms-and-interactive-elements-3ac058.gitlab.io"
   },
   {
@@ -183,7 +183,7 @@
       "Emphasized Armstrong’s quote using <em> and marked citation link with <sup>.",
       "Italicized three distinct text fragments to highlight secondary or stylistic meaning."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/html-text-elements",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/html-text-elements",
     "liveDemo": "https://html-text-elements-b877e4.gitlab.io"
   },
   {
@@ -204,7 +204,7 @@
       "Styled ordered lists with upper-roman list style.",
       "Styled all links: default color dodgerblue, visited color violet, hover color mediumseagreen."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/introduction-to-css-basics",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/introduction-to-css-basics",
     "liveDemo": "https://introduction-to-css-basics-35662b.gitlab.io"
   },
   {
@@ -221,7 +221,7 @@
       "Configured responsive image sources: pic1.jpg (≤ 480px), pic2.jpg (≤ 780px), pic3.jpg (≤ 1024px), pic4.jpg (default).",
       "Included appropriate alt text 'Beauty of Nature' for accessibility."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/linking-and-images",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/linking-and-images",
     "liveDemo": "https://linking-and-images-800d6c.gitlab.io"
   },
   {
@@ -239,7 +239,7 @@
       "Created a visual grouping by merging three header cells into a single 'Purchases' label using colspan='3'.",
       "Displayed a 'Total' row with colspan='2' to span across relevant cells in the footer."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/structuring-tabular-data",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/structuring-tabular-data",
     "liveDemo": "https://structuring-tabular-data-f0b5ea.gitlab.io"
   },
   {
@@ -265,14 +265,9 @@
       "Styled <caption> with padding, italic, letter spacing, and right alignment, positioned at table bottom.",
       "Applied gradient background, white text, and padding to .main-footer."
     ],
-    "repoLink": "https://gitlab.com/Yevhen2022/useful-css-rules",
+    "repoLink": "https://gitlab.com/yevhen-portfolio/useful-css-rules",
     "liveDemo": "https://useful-css-rules-8995b7.gitlab.io"
   }
-
-
-
-
-
 
 
 ]
