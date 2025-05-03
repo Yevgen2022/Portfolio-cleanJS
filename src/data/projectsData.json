@@ -79,8 +79,8 @@
       "Removed redundant role attributes where semantic elements already implied the role.",
       "Reinforced best practices for modern, accessible web layout using real examples."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/accessibility-fundamentals-and-html-semantic",
-    "liveDemo": "https://accessibility-fundamentals-and-html-semantic-ef3f07.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-accessibility-semantic",
+    "liveDemo": "https://yevgen2022.github.io/Ed-accessibility-semantic/"
   },
   {
     "id": "css-animation",
@@ -100,13 +100,13 @@
       "Modified 'moveleft' to run with constant linear speed.",
       "Applied 'moveleft' with easing (`ease-out`) and final keyframe persistence (`forwards`)."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/css-animations",
-    "liveDemo": "https://css-animations-ab70d1.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-css-animations",
+    "liveDemo": "https://yevgen2022.github.io/Ed-css-animations/"
   },
   {
-    "id": "css-float-layout",
+    "id": "css-layout-basics",
     "type": "educational",
-    "title": "CSS Float Layout and Multi-Column Design",
+    "title": "CSS Layout and Multi-Column Design",
     "description": "A layout-focused landing page project built using CSS float-based structure and multi-column techniques, following a strict mock-up specification.",
     "technologies": ["HTML5", "CSS3", "Float", "Box Model", "Multi-column Layout", "GitLab Pages"],
     "goals": [
@@ -117,8 +117,8 @@
       "Used CSS multi-column layout (column-count and column-gap) to split content in .client_stories into three columns with 20px gap.",
       "Applied column-span: all to h2 headings to span across all columns in multi-column layout."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/css-layout-basics",
-    "liveDemo": "https://css-layout-basics-423724.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-css-layout-basics",
+    "liveDemo": "https://yevgen2022.github.io/Ed-css-layout-basics/"
   },
   {
     "id": "css-selectors-task",
@@ -143,8 +143,8 @@
       "Added ::before pseudo-element to <h2> inside .tech with '🤖' content.",
       "Added ::after pseudo-element to direct child <h2> in .spaceflight with '🚀' content."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/css-selectors",
-    "liveDemo": "https://css-selectors-abc06f.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-css-selectors-task",
+    "liveDemo": "https://yevgen2022.github.io/Ed-css-selectors-task/"
   },
   {
     "id": "html-forms-elements",
@@ -165,8 +165,8 @@
       "Added a checkbox inside #agree-and-submit wrapped with label 'I agree on terms and conditions'.",
       "Inserted a <button> of type='submit' with label 'Send your data to NASA'."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/html-forms-and-interactive-elements",
-    "liveDemo": "https://html-forms-and-interactive-elements-3ac058.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-forms-elements",
+    "liveDemo": "https://yevgen2022.github.io/Ed-forms-elements/"
   },
   {
     "id": "html-text-elements",
@@ -183,13 +183,13 @@
       "Emphasized Armstrong’s quote using <em> and marked citation link with <sup>.",
       "Italicized three distinct text fragments to highlight secondary or stylistic meaning."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/html-text-elements",
-    "liveDemo": "https://html-text-elements-b877e4.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-html-text-elements",
+    "liveDemo": "https://yevgen2022.github.io/Ed-html-text-elements/"
   },
   {
-    "id": "styling-fundamentals",
+    "id": "introduction-to-css-basic",
     "type": "educational",
-    "title": "Styling Fundamentals",
+    "title": "Introduction to css basic",
     "description": "A beginner-level project focused on applying CSS styling through external, internal, and inline methods, with practice on typography, layout, and links.",
     "technologies": ["HTML5", "CSS3", "Inline Style", "Internal Style", "External Stylesheet", "Typography", "GitLab Pages"],
     "goals": [
@@ -204,13 +204,13 @@
       "Styled ordered lists with upper-roman list style.",
       "Styled all links: default color dodgerblue, visited color violet, hover color mediumseagreen."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/introduction-to-css-basics",
-    "liveDemo": "https://introduction-to-css-basics-35662b.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-intro-css-basics",
+    "liveDemo": "https://yevgen2022.github.io/Ed-intro-css-basics/"
   },
   {
-    "id": "navigation-and-image",
+    "id": "linking-and-images",
     "type": "educational",
-    "title": "Navigation and Images",
+    "title": "Links and Images",
     "description": "A dual-purpose project that implements a semantic navigation menu and a responsive image layout using the <picture> element and media queries.",
     "technologies": ["HTML5", "Navigation", "Anchor Links", "Responsive Images", "<picture>", "Media Queries", "GitLab Pages"],
     "goals": [
@@ -221,8 +221,8 @@
       "Configured responsive image sources: pic1.jpg (≤ 480px), pic2.jpg (≤ 780px), pic3.jpg (≤ 1024px), pic4.jpg (default).",
       "Included appropriate alt text 'Beauty of Nature' for accessibility."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/linking-and-images",
-    "liveDemo": "https://linking-and-images-800d6c.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-linking-and-images",
+    "liveDemo": "https://yevgen2022.github.io/Ed-linking-and-images/"
   },
   {
     "id": "tabular-data-representation",
@@ -239,8 +239,8 @@
       "Created a visual grouping by merging three header cells into a single 'Purchases' label using colspan='3'.",
       "Displayed a 'Total' row with colspan='2' to span across relevant cells in the footer."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/structuring-tabular-data",
-    "liveDemo": "https://structuring-tabular-data-f0b5ea.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-struct-tabular-data",
+    "liveDemo": "https://yevgen2022.github.io/Ed-struct-tabular-data/"
   },
   {
     "id": "useful-css-rules",
@@ -265,8 +265,8 @@
       "Styled <caption> with padding, italic, letter spacing, and right alignment, positioned at table bottom.",
       "Applied gradient background, white text, and padding to .main-footer."
     ],
-    "repoLink": "https://gitlab.com/yevhen-portfolio/useful-css-rules",
-    "liveDemo": "https://useful-css-rules-8995b7.gitlab.io"
+    "repoLink": "https://github.com/Yevgen2022/Ed-useful-css-rules",
+    "liveDemo": "https://yevgen2022.github.io/Ed-useful-css-rules/"
   }
 
 
