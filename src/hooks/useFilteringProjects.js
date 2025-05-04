@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useProjectsStore } from "../store/useProjectsStore";
 
 export function useFilteredProjects() {
+
     // We receive all projects from Zustand
     const projects = useProjectsStore((state) => state.projects);
 
