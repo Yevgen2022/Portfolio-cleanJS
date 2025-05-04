@@ -91,7 +91,7 @@
     }
 
     .transform-el-scale {
-        @apply hover:scale-105 transition-transform duration-700 ease-in-out transform;
+        @apply hover:scale-105 transition-all duration-300 ease-in-out transform;
     }
 
     .transition-default {

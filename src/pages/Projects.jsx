@@ -18,11 +18,11 @@ export default function Projects() {
                     My Projects
                 </h2>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="relative bg-white dark:bg-gray-800 rounded-lg shadow p-8 flex flex-col justify-between transition-colors duration-500"
+                            className="relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 flex flex-col justify-between transform-el-scale hover:shadow-xl duration-300"
                         >
                             <div>
                                 <div className="flex items-center justify-between mb-4 pr-16">

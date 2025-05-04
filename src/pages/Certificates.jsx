@@ -54,7 +54,8 @@ export default function Certificates() {
                                 isGrid
                                     ? "flex-col items-center text-center"
                                     : "flex-row items-center gap-4"
-                            } transition-transform duration-300 transform hover:scale-105`}
+                                // } transform-el-scale`}
+                            } hover:shadow-xl transition-all duration-300`}
                         >
                             <img
                                 src={cert.img}
@@ -63,7 +64,7 @@ export default function Certificates() {
                                     isGrid
                                         ? "w-full h-48 mb-4"
                                         : "w-64 h-32"
-                                } transition-transform duration-300 transform hover:scale-105`}
+                                } transform-el-scale`}
                             />
                             <div>
                                 <h3 className="text-lg font-semibold">{cert.title}</h3>
