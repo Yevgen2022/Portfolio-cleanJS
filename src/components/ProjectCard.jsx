@@ -4,7 +4,7 @@ import React from 'react';
 export default function ProjectCard({ project, onViewDetails }) {
     return (
         <div
-            className="relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 flex flex-col justify-between transform-el-scale hover:shadow-xl duration-300"
+            className="relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 flex flex-col justify-between hover:shadow-xl duration-300"
         >
             <div>
                 <div className="flex items-center justify-between mb-4 pr-16">
@@ -20,6 +20,7 @@ export default function ProjectCard({ project, onViewDetails }) {
             <button
                 onClick={() => onViewDetails(project.id)}
                 className="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-300 w-full"
+                // className="btn-style"
             >
                 View Details
             </button>
