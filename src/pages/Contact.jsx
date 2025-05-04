@@ -1,4 +1,3 @@
-
 import ContactComponent from '../components/ContactComponent.jsx';
 
 
@@ -9,7 +8,9 @@ import ContactComponent from '../components/ContactComponent.jsx';
 export default function Layout() {
     return (
         <>
-            <ContactComponent />
+            <div className="py-20">
+                <ContactComponent/>
+            </div>
         </>
     );
 }
