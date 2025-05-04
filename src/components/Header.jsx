@@ -1,124 +1,6 @@
-// import {NavLink} from 'react-router-dom';
-// import { useEffect, useState } from 'react';
-//
-//
-// export default function Header() {
-//
-//     const [darkMode, setDarkMode] = useState(false);
-//
-//     // Effect for adding/removing the dark class
-//     useEffect(() => {
-//         const savedTheme = localStorage.getItem('theme');
-//         if (savedTheme === 'dark') {
-//             setDarkMode(true);
-//             document.documentElement.classList.add('dark');
-//             // document.body.classList.add('dark');
-//         }
-//     }, []);
-//
-//     useEffect(() => {
-//         if (darkMode) {
-//             document.documentElement.classList.add('dark');
-//             // document.body.classList.add('dark');
-//             localStorage.setItem('theme', 'dark');
-//         } else {
-//             document.documentElement.classList.remove('dark');
-//             // document.body.classList.remove('dark');
-//             localStorage.setItem('theme', 'light');
-//         }
-//     }, [darkMode]);
-//
-//     const handleThemeToggle = () => {
-//         setDarkMode(prev => !prev);
-//     };
-//
-//     return (
-//         <>
-//             {/* Header */}
-//             <header
-//                 className="fixed top-0 left-0 right-0 bg-white shadow-md p-6 z-50 dark:bg-gray-800 dark:text-gray-200 transition-theme-color">
-//                 <div className="max-w-6xl mx-auto flex justify-between items-center">
-//                     <h1 className="text-2xl font-bold">Yevhen Oshkukov</h1>
-//
-//                     <ul className="hidden md:flex space-x-6 text-base font-medium">
-//                         <li><NavLink to="/"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Home</NavLink>
-//                         </li>
-//                         <li><NavLink to="/resume"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Resume</NavLink>
-//                         </li>
-//                         <li><NavLink to="/education"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Education</NavLink>
-//                         </li>
-//                         <li><NavLink to="/certificates"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Certificates</NavLink>
-//                         </li>
-//                         <li><NavLink to="/projects"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Projects</NavLink>
-//                         </li>
-//                         <li><NavLink to="/contact"
-//                                      className={({isActive}) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Contact</NavLink>
-//                         </li>
-//                     </ul>
-//
-//
-//                     <div className="flex items-center space-x-4">
-//                         {/* Theme Toggle Button */}
-//                         <button
-//                                 onClick={handleThemeToggle}
-//                                 className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-//                                 aria-label="Toggle Dark Mode"
-//                         >
-//                             <span id="sun" className="block dark:hidden">🌞</span>
-//                             <span id="moon" className="hidden dark:block">🌙</span>
-//                         </button>
-//
-//                         {/* Mobile menu button */}
-//                         <button id="mobile-menu-button"
-//                                 className="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
-//                         >
-//                             <i className="fas fa-bars"></i>
-//                         </button>
-//                     </div>
-//                 </div>
-//
-//                 {/* Mobile menu (hidden by default) */}
-//                 <div id="mobile-menu" className="hidden md:hidden mt-4 pt-4 border-t dark:border-gray-700">
-//                     <nav className="navigation px-2">
-//                         <ul className="flex flex-col space-y-1">
-//                             <li><NavLink to="/"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Home</NavLink>
-//                             </li>
-//                             <li><NavLink to="/resume"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Resume</NavLink>
-//                             </li>
-//                             <li><NavLink to="/education"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Education</NavLink>
-//                             </li>
-//                             <li><NavLink to="/certificates"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Certificates</NavLink>
-//                             </li>
-//                             <li><NavLink to="/projects"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Projects</NavLink>
-//                             </li>
-//                             <li><NavLink to="/contact"
-//                                          className={({isActive}) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Contact</NavLink>
-//                             </li>
-//                         </ul>
-//                     </nav>
-//                 </div>
-//             </header>
-//         </>
-//     );
-// }
-
-
-
-
-import { NavLink } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { FaBars } from 'react-icons/fa';
-
+import {useEffect, useState} from 'react';
+import {NavLink} from 'react-router-dom';
+import {FaBars, FaSun, FaMoon} from 'react-icons/fa';
 
 export default function Header() {
     const [darkMode, setDarkMode] = useState(false);
@@ -133,7 +15,7 @@ export default function Header() {
         }
     }, []);
 
-    // Apply/remove dark mode
+    // Update dark class
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add('dark');
@@ -144,73 +26,103 @@ export default function Header() {
         }
     }, [darkMode]);
 
-    const handleThemeToggle = () => {
-        setDarkMode(prev => !prev);
-    };
-
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(prev => !prev);
-    };
-
-    const closeMobileMenu = () => {
-        setIsMobileMenuOpen(false);
-    };
+    const handleThemeToggle = () => setDarkMode(prev => !prev);
+    const toggleMobileMenu = () => setIsMobileMenuOpen(prev => !prev);
+    const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
     return (
-        <>
-            <header className="fixed top-0 left-0 right-0 bg-white shadow-md p-6 z-50 dark:bg-gray-800 dark:text-gray-200 transition-theme-color">
-                <div className="max-w-6xl mx-auto flex justify-between items-center">
-                    <h1 className="text-2xl font-bold">Yevhen Oshkukov</h1>
+        <header
+            className="fixed top-0 left-0 right-0 bg-white shadow-md p-4 md:p-5 lg:p-6 z-50 dark:bg-gray-800 dark:text-gray-200 transition-theme-color">
+            <div className="max-w-6xl mx-auto flex justify-between items-center gap-2">
+                {/* Logo */}
+                <h1 className="text-lg md:text-xl lg:text-2xl font-bold whitespace-nowrap">
+                    Yevhen Oshkukov
+                </h1>
 
-                    {/* Desktop navigation */}
-                    <ul className="hidden md:flex space-x-6 text-base font-medium mx-4">
-                        <li><NavLink to="/" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Home</NavLink></li>
-                        <li><NavLink to="/resume" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Resume</NavLink></li>
-                        <li><NavLink to="/education" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Education</NavLink></li>
-                        <li><NavLink to="/certificates" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Certificates</NavLink></li>
-                        <li><NavLink to="/projects" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Projects</NavLink></li>
-                        <li><NavLink to="/contact" className={({ isActive }) => isActive ? "link-header activeLink-header-gray transition-theme-color" : "link-header"}>Contact</NavLink></li>
-                    </ul>
+                {/* Desktop navigation — з md і вище */}
+                <ul className="hidden md:flex justify-between lg:space-x-6 text-sm md:text-base lg:text-lg font-medium">
+                    {['/', '/resume', '/education', '/certificates', '/projects', '/contact'].map((path, i) => {
+                        const label = ['Home', 'Resume', 'Education', 'Certificates', 'Projects', 'Contact'][i];
+                        return (
+                            <li key={path}>
+                                <NavLink
+                                    to={path}
+                                    className={({isActive}) =>
+                                        isActive
+                                            ? "link-header activeLink-header-gray transition-theme-color"
+                                            : "link-header"
+                                    }
+                                >
+                                    {label}
+                                </NavLink>
+                            </li>
+                        );
+                    })}
+                </ul>
 
-                    <div className="flex items-center space-x-4 mx-4">
-                        {/* Theme toggle */}
-                        <button
-                            onClick={handleThemeToggle}
-                            className="p-2 mx-4 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-                            aria-label="Toggle Dark Mode"
-                        >
-                            <span className="block dark:hidden">🌞</span>
-                            <span className="hidden dark:block">🌙</span>
-                        </button>
+                {/* Mobile controls – only TO md */}
+                <div className="flex items-center gap-2 md:hidden">
+                    <button
+                        onClick={handleThemeToggle}
+                        className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        aria-label="Toggle Dark Mode"
+                    >
 
-                        {/* Mobile menu toggle button */}
-                        <button
-                            onClick={toggleMobileMenu}
-                            className="md:hidden p-2  rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
-                            aria-label="Toggle Mobile Menu"
-                        >
-                            {/*<i className="fas fa-bars"></i>*/}
-                            <FaBars size={20} />
-                        </button>
-                    </div>
+                        {/* Show icon depending on theme */}
+                        {darkMode ? <FaMoon className="text-yellow-400"/> : <FaSun className="text-yellow-500"/>}
+                    </button>
+
+                    <button
+                        onClick={toggleMobileMenu}
+                        className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                        aria-label="Toggle Mobile Menu"
+                    >
+                        <FaBars size={20}/>
+                    </button>
                 </div>
 
-                {/* Mobile menu */}
-                {isMobileMenuOpen && (
-                    <div className="md:hidden mt-4 pt-4 border-t dark:border-gray-700">
-                        <nav className="navigation px-2">
-                            <ul className="flex flex-col space-y-1">
-                                <li><NavLink to="/" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Home</NavLink></li>
-                                <li><NavLink to="/resume" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Resume</NavLink></li>
-                                <li><NavLink to="/education" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Education</NavLink></li>
-                                <li><NavLink to="/certificates" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Certificates</NavLink></li>
-                                <li><NavLink to="/projects" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Projects</NavLink></li>
-                                <li><NavLink to="/contact" onClick={closeMobileMenu} className={({ isActive }) => isActive ? "link-header activeLink-header-gray" : "link-header"}>Contact</NavLink></li>
-                            </ul>
-                        </nav>
-                    </div>
-                )}
-            </header>
-        </>
+                {/* Theme toggle for md+ screens */}
+                <div className="hidden md:block">
+                    <button
+                        onClick={handleThemeToggle}
+                        className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        aria-label="Toggle Dark Mode"
+                    >
+                        {/* Show icon depending on theme */}
+                        {darkMode ? <FaMoon className="text-yellow-400"/> : <FaSun className="text-yellow-500"/>}
+
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile menu — only TO md */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden mt-4 pt-4 border-t dark:border-gray-700">
+                    <nav className="navigation px-2">
+                        <ul className="flex flex-col space-y-1">
+                            {['/', '/resume', '/education', '/certificates', '/projects', '/contact'].map((path, i) => {
+                                const label = ['Home', 'Resume', 'Education', 'Certificates', 'Projects', 'Contact'][i];
+                                return (
+                                    <li key={path}>
+                                        <NavLink
+                                            to={path}
+                                            onClick={closeMobileMenu}
+                                            className={({isActive}) =>
+                                                isActive
+                                                    ? "link-header activeLink-header-gray"
+                                                    : "link-header"
+                                            }
+                                        >
+                                            {label}
+                                        </NavLink>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
+                </div>
+            )}
+        </header>
     );
 }
+
