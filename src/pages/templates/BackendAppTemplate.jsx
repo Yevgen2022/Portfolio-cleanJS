@@ -2,7 +2,7 @@
 export function BackendAppTemplate({
                                        title,
                                        description,
-                                       techStack,
+                                       technologies,
                                        architecture,
                                        endpoints,
                                        security,
@@ -25,7 +25,7 @@ export function BackendAppTemplate({
                     <div>
                         <h3 className="project-detail-h3">Backend Technologies Used:</h3>
                         <ul className="list-disc list-inside ml-4 text-gray-600 dark:text-gray-400">
-                            {techStack.map((item, index) => <li key={index}>{item}</li>)}
+                            {technologies.map((item, index) => <li key={index}>{item}</li>)}
                         </ul>
                     </div>
 

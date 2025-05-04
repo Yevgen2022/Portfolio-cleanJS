@@ -4,6 +4,7 @@
     "type": "landing",
     "title": "Weeb Website",
     "description": "Responsive landing page for a product based on a mock-up with Figma.",
+    "featured": "true",
     "technologies": ["HTML5", "CSS3", "JavaScript", "Figma", "Media Queries"],
     "goals": [
       "Implements designs created in Figma using modern web technologies.",
@@ -19,6 +20,7 @@
     "type": "frontend-app",
     "title": "React Todo App",
     "description": "A simple todo application built with React that allows users to manage their daily tasks.",
+    "featured": "true",
     "technologies": ["React", "JavaScript", "CSS", "Local State", "Modal UI"],
     "features": [
       "Add, edit, and delete tasks",
@@ -41,7 +43,8 @@
     "type": "backend-app",
     "title": "Sincos Admin Panel",
     "description": "Admin dashboard application built with Laravel and Blade templates to manage products and users.",
-    "techStack": ["Laravel", "Blade", "Tailwind CSS", "Laravel Auth", "Resource Controllers", "DummyJSON API"],
+    "featured": "true",
+    "technologies": ["Laravel", "Blade", "Tailwind CSS", "Laravel Auth", "Resource Controllers", "DummyJSON API"],
     "architecture": "MVC pattern with server-side rendering using Blade. RESTful routing and resource controllers for clean backend logic.",
     "endpoints": [
       "/products (GET, POST, PUT, DELETE)",

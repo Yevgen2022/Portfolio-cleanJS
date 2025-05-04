@@ -208,7 +208,6 @@ export default function Home() {
                         </div>
 
 
-
                         <div
                             className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 dark:bg-gray-800 dark:text-gray-200">
                             <a href="/backend-projects" className="block group">
@@ -224,17 +223,15 @@ export default function Home() {
                                         APIs, database management, and server-side solutions.</p>
                                     <div className="flex flex-wrap gap-2">
                                 <span
-                                    className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Node.js</span>
-                                        <span
-                                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Express</span>
-                                        <span
-                                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Laravel</span>
+                                    className="project-label">Node.js</span>
+                                 <span
+                                     className="project-label">Express</span>
+                                 <span
+                                     className="project-label">Laravel</span>
                                     </div>
                                 </div>
                             </a>
                         </div>
-
-
 
 
                     </div>

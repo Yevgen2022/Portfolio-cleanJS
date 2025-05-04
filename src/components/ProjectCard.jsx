@@ -9,7 +9,7 @@ export default function ProjectCard({ project, onViewDetails }) {
             <div>
                 <div className="flex items-center justify-between mb-4 pr-16">
                     <h3 className="text-xl font-semibold">{project.title}</h3>
-                    <span className="absolute top-4 right-4 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300 capitalize">
+                    <span className="absolute top-4 right-4 project-label">
                         {project.type.replace("-", " ")}
                     </span>
                 </div>
