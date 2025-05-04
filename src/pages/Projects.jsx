@@ -22,10 +22,10 @@ export default function Projects() {
                     {projects.map((project) => (
                         <div
                             key={project.id}
-                            className="relative bg-white dark:bg-gray-800 rounded-lg shadow p-6 flex flex-col justify-between transition-colors duration-500"
+                            className="relative bg-white dark:bg-gray-800 rounded-lg shadow p-8 flex flex-col justify-between transition-colors duration-500"
                         >
                             <div>
-                                <div className="flex items-center justify-between mb-4 pr-14">
+                                <div className="flex items-center justify-between mb-4 pr-16">
                                     <h3 className="text-xl font-semibold">{project.title}</h3>
                                     <span
                                         className="absolute top-4 right-4 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300 capitalize">
