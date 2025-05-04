@@ -1,59 +1,6 @@
-// import {useNavigate} from "react-router-dom";
-// import {useProjectsStore} from '../store/useProjectsStore';
-//
-// export default function Projects() {
-//
-//     const navigate = useNavigate();
-//
-//     const projects = useProjectsStore((state) => state.projects);
-//
-//     const handleViewDetails = (projectName) => {
-//         navigate(`/projects/${projectName}`);
-//     };
-//
-//     return (
-//         <div className="max-w-6xl mx-auto py-20">
-//             <section>
-//                 <h2 className="text-3xl font-bold mb-8 border-b pb-4 border-gray-300 dark:border-gray-700">
-//                     My Projects
-//                 </h2>
-//
-//                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-//                     {projects.map((project) => (
-//                         <div
-//                             key={project.id}
-//                             className="relative bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 flex flex-col justify-between transform-el-scale hover:shadow-xl duration-300"
-//                         >
-//                             <div>
-//                                 <div className="flex items-center justify-between mb-4 pr-16">
-//                                     <h3 className="text-xl font-semibold">{project.title}</h3>
-//                                     <span
-//                                         className="absolute top-4 right-4 text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-300 capitalize">
-//                                         {project.type.replace("-", " ")}
-//                                         </span>
-//                                 </div>
-//                                 <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-//                                     {project.description}
-//                                 </p>
-//                             </div>
-//                             <button
-//                                 onClick={() => handleViewDetails(project.id)}
-//                                 className="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-300 w-full"
-//                             >
-//                                 View Details
-//                             </button>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </section>
-//         </div>
-//     );
-// }
-
-
-
 // pages/Projects.jsx
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { useProjectsStore } from "../store/useProjectsStore";
 import ProjectCard from "../components/ProjectCard";
 
@@ -61,19 +8,46 @@ export default function Projects() {
     const navigate = useNavigate();
     const projects = useProjectsStore((state) => state.projects);
 
+    const [selectedType, setSelectedType] = useState("all");
+
     const handleViewDetails = (projectId) => {
         navigate(`/projects/${projectId}`);
     };
 
+    const handleFilterChange = (e) => {
+        setSelectedType(e.target.value);
+    };
+
+    // Filtering
+    const filteredProjects =
+        selectedType === "all"
+            ? projects
+            : projects.filter((project) => project.type === selectedType);
+
     return (
         <div className="max-w-6xl mx-auto py-20">
             <section>
-                <h2 className="text-3xl font-bold mb-8 border-b pb-4 border-gray-300 dark:border-gray-700">
-                    My Projects
-                </h2>
+
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+                    <h2 className="text-3xl font-bold border-b sm:border-none pb-4 sm:pb-0 border-gray-300 dark:border-gray-700">
+                        My Projects
+                    </h2>
+
+                    <select
+                        className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-800 dark:text-gray-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                        value={selectedType}
+                        onChange={handleFilterChange}
+                    >
+                        <option value="all">All projects</option>
+                        <option value="landing">Landing</option>
+                        <option value="frontend-app">Frontend-app</option>
+                        <option value="backend-app">Backend-app</option>
+                        <option value="educational">Educational</option>
+                    </select>
+                </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.map((project) => (
+                    {filteredProjects.map((project) => (
                         <ProjectCard
                             key={project.id}
                             project={project}
