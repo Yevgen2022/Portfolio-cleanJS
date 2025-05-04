@@ -1,10 +1,10 @@
 import {useState} from "react";
 
-import htmlcssCert from "../assets/img/htmlcss.png";
-import ciklumCert from "../assets/img/Ciklum.png";
-import testEngineerCert from "../assets/img/TestEngineer.png";
-import greenForestB2Cert from "../assets/img/Green Forest Certificate(B2).png";
-import greenForestB1Cert from "../assets/img/Green Forest Certificate(B1).PNG";
+import htmlcssCert from "../assets/img/Certificates/htmlcss.png";
+import ciklumCert from "../assets/img/Certificates/Ciklum.png";
+import testEngineerCert from "../assets/img/Certificates/TestEngineer.png";
+import greenForestB2Cert from "../assets/img/Certificates/Green Forest Certificate(B2).png";
+import greenForestB1Cert from "../assets/img/Certificates/Green Forest Certificate(B1).PNG";
 import {FaTh, FaList} from 'react-icons/fa';
 
 export default function Certificates() {

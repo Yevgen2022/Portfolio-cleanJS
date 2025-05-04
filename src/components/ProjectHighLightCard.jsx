@@ -1,10 +1,20 @@
 import { Link } from "react-router-dom";
+import frontendImg from '../assets/img/ProjectsFoto/frontend-app.png';
+import backendImg from '../assets/img/ProjectsFoto/backend-app.png';
+import landingImg from '../assets/img/ProjectsFoto/landing.png';
+
 
 // Accepts an object project
 export default function ProjectHighlightCard({ project }) {
 
+    const typeToImage = {
+        'frontend-app': frontendImg,
+        'backend-app': backendImg,
+        'landing': landingImg,
+    };
+
     // Creating a path to an image by type
-    const imagePath = `/assets/img/${project.type}.jpg`;
+    const imagePath = typeToImage[project.type];
 
     // We choose the first 3 technologies
     const tech = project.technologies.slice(0, 3);
@@ -13,11 +23,11 @@ export default function ProjectHighlightCard({ project }) {
         <div className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 dark:bg-gray-800 dark:text-gray-200">
             {/* Go to the project page via <Link> */}
             <Link to={`/projects/${project.id}`} className="block group">
-                <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
+                <div className="aspect-[4/3] object-fill md:aspect-[3/3] bg-gray-200 dark:bg-gray-700 overflow-hidden">
                     <img
                         src={imagePath}
                         alt={project.title}
-                        className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+                        className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                     />
                 </div>
                 <div className="p-6">

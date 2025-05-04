@@ -55,3 +55,95 @@
                 {/*        </div>*/}
                 {/*    </div>*/}
                 {/*</section>*/}
+
+
+
+
+
+
+                    {/*Projects*/
+                                }
+                                {/*<section id="projects" className="mb-16">*/}
+                                {/*    <h2 className="text-2xl font-bold mb-6">Highlighted Projects</h2>*/}
+                                {/*    <div className="grid md:grid-cols-3 gap-8">*/}
+                                {/*        /!*Frontend Projects Link*!/*/}
+                                {/*        <div*/}
+                                {/*            className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 dark:bg-gray-800 dark:text-gray-200">*/}
+                                {/*            <a href="/frontend-projects" className="block group">*/}
+                                {/*                <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">*/}
+                                {/*                    <img src="https://placehold.co/600x300" alt="Frontend Projects"*/}
+                                {/*                         className="w-full h-full object-cover group-hover:scale-110 transition duration-300"/>*/}
+                                {/*                </div>*/}
+                                {/*                <div className="p-6">*/}
+                                {/*                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Frontend*/}
+                                {/*                        Projects</h3>*/}
+                                {/*                    <p className="mb-4 text-gray-600 dark:text-gray-400">Explore my frontend projects,*/}
+                                {/*                        including*/}
+                                {/*                        interactive dashboards, responsive web apps, and more.</p>*/}
+                                {/*                    <div className="flex flex-wrap gap-2">*/}
+                                {/*                <span*/}
+                                {/*                    className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">React</span>*/}
+                                {/*                        <span*/}
+                                {/*                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">JavaScript</span>*/}
+                                {/*                        <span*/}
+                                {/*                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Tailwind</span>*/}
+                                {/*                    </div>*/}
+                                {/*                </div>*/}
+                                {/*            </a>*/}
+                                {/*        </div>*/}
+
+                                {/*        /!*<Backend Projects Link*!/*/}
+                                {/*        <div*/}
+                                {/*            className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 dark:bg-gray-800 dark:text-gray-200">*/}
+                                {/*            <a href="/backend-projects" className="block group">*/}
+                                {/*                <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">*/}
+                                {/*                    <img src="https://placehold.co/600x300" alt="Backend Projects"*/}
+                                {/*                         className="w-full h-full object-cover group-hover:scale-110 transition duration-300"/>*/}
+                                {/*                </div>*/}
+                                {/*                <div className="p-6">*/}
+                                {/*                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Backend*/}
+                                {/*                        Projects</h3>*/}
+                                {/*                    <p className="mb-4 text-gray-600 dark:text-gray-400">Check out my backend projects,*/}
+                                {/*                        including*/}
+                                {/*                        APIs, database management, and server-side solutions.</p>*/}
+                                {/*                    <div className="flex flex-wrap gap-2">*/}
+                                {/*                <span*/}
+                                {/*                    className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Node.js</span>*/}
+                                {/*                        <span*/}
+                                {/*                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Express</span>*/}
+                                {/*                        <span*/}
+                                {/*                            className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200">Laravel</span>*/}
+                                {/*                    </div>*/}
+                                {/*                </div>*/}
+                                {/*            </a>*/}
+                                {/*        </div>*/}
+
+
+                                {/*        <div*/}
+                                {/*            className="bg-white shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300 dark:bg-gray-800 dark:text-gray-200">*/}
+                                {/*            <a href="/backend-projects" className="block group">*/}
+                                {/*                <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">*/}
+                                {/*                    <img src="https://placehold.co/600x300" alt="Backend Projects"*/}
+                                {/*                         className="w-full h-full object-cover group-hover:scale-110 transition duration-300"/>*/}
+                                {/*                </div>*/}
+                                {/*                <div className="p-6">*/}
+                                {/*                    <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Backend*/}
+                                {/*                        Projects</h3>*/}
+                                {/*                    <p className="mb-4 text-gray-600 dark:text-gray-400">Check out my backend projects,*/}
+                                {/*                        including*/}
+                                {/*                        APIs, database management, and server-side solutions.</p>*/}
+                                {/*                    <div className="flex flex-wrap gap-2">*/}
+                                {/*                <span*/}
+                                {/*                    className="project-label">Node.js</span>*/}
+                                {/*                 <span*/}
+                                {/*                     className="project-label">Express</span>*/}
+                                {/*                 <span*/}
+                                {/*                     className="project-label">Laravel</span>*/}
+                                {/*                    </div>*/}
+                                {/*                </div>*/}
+                                {/*            </a>*/}
+                                {/*        </div>*/}
+
+
+                                {/*    </div>*/}
+                                {/*</section>*/}
