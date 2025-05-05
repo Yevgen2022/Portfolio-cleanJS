@@ -18,7 +18,7 @@ export default function ProjectHighlightCard({ project }) {
             to={`/projects/${project.id}`}
             className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 shadow-md hover:shadow-xl rounded-xl overflow-hidden transition-all duration-300 flex flex-col sm:flex-row md:flex-col group"
         >
-            {/* ЗОБРАЖЕННЯ */}
+            {/* image */}
             <div className="sm:w-1/2 md:w-full aspect-square sm:aspect-auto md:aspect-square bg-gray-200 dark:bg-gray-700 overflow-hidden rounded-xl ">
                 <img
                     src={imagePath}
@@ -27,7 +27,7 @@ export default function ProjectHighlightCard({ project }) {
                 />
             </div>
 
-            {/* ВМІСТ */}
+            {/* contents */}
             <div className="p-4 sm:p-6 flex flex-col justify-between flex-grow">
                 <div>
                     <h3 className="text-lg sm:text-xl font-bold mb-2 group-hover:text-blue-600 transition">
