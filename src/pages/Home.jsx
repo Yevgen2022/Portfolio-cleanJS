@@ -4,15 +4,20 @@ import ContactComponent from "../components/ContactComponent.jsx";
 import {Link} from 'react-router-dom';
 import HighlightedProjects from "../components/HighlightedProjects.jsx";
 import SkillCard from "../components/SkillCard.jsx";
+import EducationCard from "../components/EducationCard.jsx";
+import CertificateCard from "../components/CertificateCard.jsx";
 import {skills} from "../data/skillsData.js";
+import {educations} from "../data/skillsData";
+import {certificates} from "../data/skillsData";
+
 
 export default function Home() {
 
     return (
         <>
-            {/*Hero section */}
             <div className="home-container">
 
+                {/*Hero section */}
                 <section id="about" className="py-20 mb-12">
                     <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-center md:text-left">
                         <img
@@ -43,6 +48,7 @@ export default function Home() {
 
                 {/* Skills section */}
                 <section id="skills" className="mb-16">
+
                     <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -50,82 +56,35 @@ export default function Home() {
                             <SkillCard key={index} {...skill} />
                         ))}
                     </div>
+
                 </section>
 
 
                 {/*Education */}
                 <section id="education" className="mb-16">
+
                     <h2 className="text-2xl font-bold mb-6">Education</h2>
+
                     <div className="space-y-6">
-                        <div
-                            className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 dark:text-gray-300 transition-colors">
-                            <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                                <div>
-                                    <h3 className="font-bold text-xl">Bachelor’s degree | Applied mathematics</h3>
-                                    <p className="text-gray-600 dark:text-gray-400 mt-1">Ivan Franko National University
-                                        of
-                                        Lviv</p>
-                                </div>
-                                <p className="text-blue-600 font-medium mt-2 md:mt-0"> 09/1996 - 07/2002</p>
-                            </div>
-                        </div>
-                        <div
-                            className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 dark:text-gray-300 transition-colors">
-                            <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                                <div>
-                                    <h3 className="font-bold text-xl">Master’s degree | Information system and
-                                        technologies</h3>
-                                    <p className="text-gray-600 dark:text-gray-400 mt-1">National Environmental
-                                        University
-                                        of
-                                        Lviv</p>
-                                </div>
-                                <p className="text-blue-600 font-medium mt-2 md:mt-0"> 09/2022 - 04/2024</p>
-                            </div>
-                        </div>
+                        {educations.map((edu, index) => (
+                            <EducationCard key={index} {...edu} />
+                        ))}
                     </div>
+
                 </section>
+
 
                 {/*Certificates Section (Added)*/}
                 <section id="certificates" className="mb-16">
-                    <h2 className="text-2xl font-bold mb-6">Certificates</h2>
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <div className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 transition-colors">
-                            <div className="flex items-start gap-4">
-                                <div className="text-3xl text-blue-600">
-                                    <FaCertificate className="text-blue-600 text-2xl"/>
 
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-lg">Frontend Developer</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">Ciklum, Prometheus</p>
-                                    <p className="mt-2 text-sm">Completed March 2023</p>
-                                    <Link
-                                        to="/certificates"
-                                        className="text-blue-600 text-sm inline-block mt-2 hover:underline"
-                                    >View
-                                        Certificates</Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800 transition-colors">
-                            <div className="flex items-start gap-4">
-                                <div className="text-3xl text-blue-600">
-                                    <FaCertificate className="text-blue-600 text-2xl"/>
-                                </div>
-                                <div>
-                                    <h3 className="font-bold text-lg">Full-stack developer</h3>
-                                    <p className="text-gray-600 dark:text-gray-400">CBS, ITVDN</p>
-                                    <p className="mt-2 text-sm">Completed December 2024</p>
-                                    <Link
-                                        to="/certificates"
-                                        className="text-blue-600 text-sm inline-block mt-2 hover:underline"
-                                    >View
-                                        Certificates</Link>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 className="text-2xl font-bold mb-6">Certificates</h2>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {certificates.map((cert, index) => (
+                            <CertificateCard key={index} {...cert} />
+                        ))}
                     </div>
+
                 </section>
 
 
