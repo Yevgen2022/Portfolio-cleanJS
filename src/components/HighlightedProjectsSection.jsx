@@ -1,7 +1,7 @@
 import { useProjectsStore } from "../store/useProjectsStore";
-import ProjectHighlightCard from "./ProjectHighlightCard";
+import HighLightProjectCard from "./HighLightProjectCard.jsx";
 
-export default function HighlightedProjects() {
+export default function HighlightedProjectsSection() {
     // We get the entire list of projects
     const projects = useProjectsStore((state) => state.projects);
 
@@ -14,7 +14,7 @@ export default function HighlightedProjects() {
             <div className="grid md:grid-cols-3 grid-cols-1 gap-8">
                 {/* We display each object through a separate card */}
                 {highlighted.map((project) => (
-                    <ProjectHighlightCard key={project.id} project={project} />
+                    <HighLightProjectCard key={project.id} project={project} />
                 ))}
             </div>
         </section>

@@ -1,14 +1,10 @@
 import myFoto from "../assets/img/MyFoto/myFoto.jpg";
-import {FaCertificate} from "react-icons/fa";
 import ContactComponent from "../components/ContactComponent.jsx";
-import {Link} from 'react-router-dom';
-import HighlightedProjects from "../components/HighlightedProjects.jsx";
-import SkillCard from "../components/SkillCard.jsx";
-import EducationCard from "../components/EducationCard.jsx";
+import HighlightedProjectsSection from "../components/HighlightedProjectsSection.jsx";
 import CertificateCard from "../components/CertificateCard.jsx";
-import {skills} from "../data/skillsData.js";
-import {educations} from "../data/skillsData";
-import {certificates} from "../data/skillsData";
+import SkillsSection from "../components/SkillsSection.jsx";
+import EducationSection from "../components/EducationSection.jsx";
+import CertificateSection from "../components/CertificateSection.jsx";
 
 
 export default function Home() {
@@ -48,51 +44,27 @@ export default function Home() {
 
                 {/* Skills section */}
                 <section id="skills" className="mb-16">
-
-                    <h2 className="text-2xl font-bold mb-6">Skills</h2>
-
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {skills.map((skill, index) => (
-                            <SkillCard key={index} {...skill} />
-                        ))}
-                    </div>
-
+                    <SkillsSection />
                 </section>
 
 
                 {/*Education */}
                 <section id="education" className="mb-16">
-
-                    <h2 className="text-2xl font-bold mb-6">Education</h2>
-
-                    <div className="space-y-6">
-                        {educations.map((edu, index) => (
-                            <EducationCard key={index} {...edu} />
-                        ))}
-                    </div>
-
+                    <EducationSection />
                 </section>
 
 
                 {/*Certificates Section (Added)*/}
                 <section id="certificates" className="mb-16">
-
-                    <h2 className="text-2xl font-bold mb-6">Certificates</h2>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {certificates.map((cert, index) => (
-                            <CertificateCard key={index} {...cert} />
-                        ))}
-                    </div>
-
+                    <CertificateSection />
                 </section>
 
 
                 {/*Projects*/}
-
                 <section id="projects" className="scroll-mt-28">
-                    <HighlightedProjects/>
+                    <HighlightedProjectsSection/>
                 </section>
+
 
                 <section id="contact" className="scroll-mt-28">
                     <ContactComponent/>
