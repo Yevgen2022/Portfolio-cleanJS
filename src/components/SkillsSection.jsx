@@ -5,7 +5,7 @@ export default function SkillsSection() {
 
     return (
 
-        <>
+        <section id="skills" className="mb-16">
             <h2 className="text-2xl font-bold mb-6">Skills</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -13,7 +13,7 @@ export default function SkillsSection() {
                     <SkillCard key={index} {...skill} />
                 ))}
             </div>
-        </>
+        </section>
 
     );
 }

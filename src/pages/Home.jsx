@@ -1,10 +1,9 @@
 import myFoto from "../assets/img/MyFoto/myFoto.jpg";
 import ContactComponent from "../components/ContactComponent.jsx";
-import HighlightedProjectsSection from "../components/HighlightedProjectsSection.jsx";
-import CertificateCard from "../components/CertificateCard.jsx";
+import HighlightProjectsSection from "../components/HighlightProjectsSection.jsx";
 import SkillsSection from "../components/SkillsSection.jsx";
-import EducationSection from "../components/EducationSection.jsx";
-import CertificateSection from "../components/CertificateSection.jsx";
+import EducationsSection from "../components/EducationsSection.jsx";
+import CertificatesSection from "../components/CertificatesSection.jsx";
 
 
 export default function Home() {
@@ -43,28 +42,16 @@ export default function Home() {
 
 
                 {/* Skills section */}
-                <section id="skills" className="mb-16">
-                    <SkillsSection />
-                </section>
-
+                <SkillsSection />
 
                 {/*Education */}
-                <section id="education" className="mb-16">
-                    <EducationSection />
-                </section>
-
+                <EducationsSection />
 
                 {/*Certificates Section (Added)*/}
-                <section id="certificates" className="mb-16">
-                    <CertificateSection />
-                </section>
-
+                <CertificatesSection />
 
                 {/*Projects*/}
-                <section id="projects" className="scroll-mt-28">
-                    <HighlightedProjectsSection/>
-                </section>
-
+                <HighlightProjectsSection/>
 
                 <section id="contact" className="scroll-mt-28">
                     <ContactComponent/>

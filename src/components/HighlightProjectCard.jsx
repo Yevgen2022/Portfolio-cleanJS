@@ -3,7 +3,7 @@ import frontendImg from '../assets/img/ProjectsFoto/frontend-app320.png';
 import backendImg from '../assets/img/ProjectsFoto/backend-app320.png';
 import landingImg from '../assets/img/ProjectsFoto/landing320.png';
 
-export default function HighLightProjectCard({ project }) {
+export default function HighlightProjectCard({ project }) {
     const typeToImage = {
         'frontend-app': frontendImg,
         'backend-app': backendImg,
