@@ -1,4 +1,4 @@
-import myFoto from "../assets/img/MyFoto/myFoto.jpg";
+import myPhoto from "../assets/img/MyPhoto/myPhoto.jpg";
 import ContactComponent from "../components/ContactComponent.jsx";
 import HighlightProjectsSection from "../components/HighlightProjectsSection.jsx";
 import SkillsSection from "../components/SkillsSection.jsx";
@@ -16,7 +16,7 @@ export default function Home() {
                 <section id="about" className="py-20 mb-12">
                     <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12 text-center md:text-left">
                         <img
-                            src={myFoto}
+                            src={myPhoto}
                             alt="Yevhen Oshkukov"
                             className="w-32 sm:w-52 md:w-44 lg:w-52 h-auto rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800 transition-theme-color"
                         />
@@ -53,8 +53,9 @@ export default function Home() {
                 {/*Projects*/}
                 <HighlightProjectsSection/>
 
+                {/* Connect form */}
                 <section id="contact" className="scroll-mt-28">
-                    <ContactComponent/>
+                <ContactComponent/>
                 </section>
 
             </div>

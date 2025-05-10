@@ -68,6 +68,93 @@
     "liveDemo": ""
   },
   {
+    "id": "vanilla-notes-php",
+    "type": "backend-app",
+    "title": "Notes App with Vanilla PHP",
+    "description": "Educational project that demonstrates building a CRUD app using pure PHP with custom routing, middleware, and views.",
+    "featured": "false",
+    "technologies": [
+      "PHP",
+      "OOP",
+      "Custom Router",
+      "Sessions",
+      "Middleware",
+      "MySQL",
+      "Form Validation"
+    ],
+    "architecture": "MVC-like architecture with manual routing (routes.php), separation of concerns using Core classes, and server-side rendering with reusable PHP views.",
+    "endpoints": [
+      "/notes (index)",
+      "/notes/create",
+      "/notes/store",
+      "/notes/edit",
+      "/notes/update",
+      "/notes/delete",
+      "/login",
+      "/register",
+      "/about",
+      "/contact"
+    ],
+    "security": [
+      "Session-based authentication",
+      "Custom middleware (Auth, Guest)",
+      "CSRF protection via tokens",
+      "Input validation and sanitization"
+    ],
+    "challenges": [
+      "Building a router from scratch to handle GET/POST requests",
+      "Implementing middleware logic for protected routes",
+      "Structuring reusable view components (partials)",
+      "Designing secure session-based login system",
+      "Handling validation and form errors manually"
+    ],
+    "repoLink": "https://github.com/Yevgen2022/Demo",
+    "liveDemo": ""
+  },
+  {
+    "id": "laravel-first-project",
+    "type": "backend-app",
+    "title": "Laravel First Project",
+    "description": "Educational Laravel app with routing, controllers, Blade templates, migrations, and model relationships.",
+    "featured": "false",
+    "technologies": [
+      "Laravel",
+      "Blade",
+      "Eloquent ORM",
+      "MySQL / SQLite",
+      "Routing",
+      "Migrations",
+      "PHP",
+      "Composer",
+      "Vite / Laravel Mix"
+    ],
+    "architecture": "MVC pattern with route/controller binding, Blade views for server-side rendering, Eloquent models for data access, and database migrations.",
+    "endpoints": [
+      "/",
+      "/about",
+      "/contacts",
+      "/posts",
+      "/posts/create",
+      "/posts/{id}/edit",
+      "/posts/{id}/delete"
+    ],
+    "security": [
+      "Laravel CSRF protection",
+      "Form validation via Request classes or controllers",
+      "Built-in error handling",
+      "Auth scaffolding available"
+    ],
+    "challenges": [
+      "Understanding controller/view separation",
+      "Working with Blade inheritance and layouts",
+      "Building database relationships with Eloquent",
+      "Handling user input and validation",
+      "Structuring routes for RESTful behavior"
+    ],
+    "repoLink": "https://github.com/Yevgen2022/LaravelFirstProject",
+    "liveDemo": ""
+  },
+  {
     "id": "accessibility-semantic",
     "type": "educational",
     "title": "Accessibility fundamentals and HTML semantic",
