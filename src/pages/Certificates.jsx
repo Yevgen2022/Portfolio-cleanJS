@@ -1,11 +1,6 @@
 import {useState} from "react";
-
-import htmlcssCert from "../assets/img/Certificates/htmlcss.png";
-import ciklumCert from "../assets/img/Certificates/Ciklum.png";
-import testEngineerCert from "../assets/img/Certificates/TestEngineer.png";
-import greenForestB2Cert from "../assets/img/Certificates/Green Forest Certificate(B2).png";
-import greenForestB1Cert from "../assets/img/Certificates/Green Forest Certificate(B1).PNG";
 import {FaTh, FaList} from 'react-icons/fa';
+import {visualCertificates} from "../data/profileData.js";
 
 export default function Certificates() {
     const [isGrid, setIsGrid] = useState(true);
@@ -13,15 +8,6 @@ export default function Certificates() {
     const toggleView = () => {
         setIsGrid((prev) => !prev);
     };
-
-    // Certificate data
-    const certificates = [
-        {img: htmlcssCert, title: "HTML, CSS Development", desc: "CBS, ITVDN 2024"},
-        {img: ciklumCert, title: "Frontend Developer", desc: "Ciklum, Prometheus 2023"},
-        {img: testEngineerCert, title: "QA/QC Engineer", desc: "Dotli-online university, 2022"},
-        {img: greenForestB2Cert, title: "English course B2 level", desc: "Green Forest, 2025"},
-        {img: greenForestB1Cert, title: "English course B1 level", desc: "Green Forest, 2024"},
-    ];
 
     return (
         <div className="max-w-6xl mx-auto py-20">
@@ -47,7 +33,7 @@ export default function Certificates() {
                         isGrid ? "grid md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6"
                     }`}
                 >
-                    {certificates.map((cert, index) => (
+                    {visualCertificates.map((cert, index) => (
                         <div
                             key={index}
                             className={`bg-gray-50 dark:bg-gray-800 p-4 rounded-lg shadow flex ${

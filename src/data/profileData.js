@@ -3,6 +3,12 @@ import {
 } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss } from "react-icons/si";
 
+import htmlCert from "../assets/img/Certificates/htmlcss.png";
+import ciklumCert from "../assets/img/Certificates/Ciklum.png";
+import testEngineerCert from "../assets/img/Certificates/TestEngineer.png";
+import greenForestB2Cert from "../assets/img/Certificates/Green Forest Certificate(B2).png";
+import greenForestB1Cert from "../assets/img/Certificates/Green Forest Certificate(B1).PNG";
+
 export const skills = [
     { Icon: FaHtml5, label: "HTML5", color: "text-orange-500" },
     { Icon: FaCss3Alt, label: "CSS3", color: "text-blue-500" },
@@ -43,4 +49,45 @@ export const certificates = [
         date: "Completed December 2024",
         link: "/certificates",
     },
+];
+
+export const courses = [
+    {
+        title: "English course B2 level",
+        place: "Green Forest 2025",
+        description:
+            "Practiced advanced grammar, technical vocabulary, and real-life communication scenarios for the IT industry.",
+    },
+    {
+        title: "Full-Stack Web Development",
+        place: "CBS, ITVDN 2024",
+        description:
+            "Covered React, Node.js, Laravel, HTML, CSS, Typescript, Tailwind, SQL and project deployment.",
+    },
+    {
+        title: "English course B1 level",
+        place: "Green Forest 2024",
+        description:
+            "Covered grammar, reading, and speaking practice with emphasis on understanding and discussing technical topics in English.",
+    },
+    {
+        title: "Frontend Development",
+        place: "Ciklum, Prometheus 2023",
+        description:
+            "Covered HTML, CSS, JS, React, Bootstrap.",
+    },
+    {
+        title: "QA/QC Engineer",
+        place: "Dotli-online university, 2022",
+        description:
+            "Covered software testing methodologies, test case creation, test levels, defect tracking, and basics of databases.",
+    },
+];
+
+export const visualCertificates = [
+    { img: htmlCert, title: "HTML, CSS Development", desc: "CBS, ITVDN 2024" },
+    { img: ciklumCert, title: "Frontend Developer", desc: "Ciklum, Prometheus 2023" },
+    { img: testEngineerCert, title: "QA/QC Engineer", desc: "Dotli-online university, 2022" },
+    { img: greenForestB2Cert, title: "English course B2 level", desc: "Green Forest, 2025" },
+    { img: greenForestB1Cert, title: "English course B1 level", desc: "Green Forest, 2024" },
 ];

@@ -14,7 +14,5 @@ export default function EducationsSection() {
                 ))}
             </div>
         </section>
-
-
     );
 }
