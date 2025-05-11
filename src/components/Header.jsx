@@ -32,14 +32,14 @@ export default function Header() {
 
     return (
         <header
-            className="fixed top-0 left-0 right-0 bg-white shadow-md p-4 md:p-5 lg:p-6 z-50 dark:bg-gray-800 dark:text-gray-200 transition-theme-color">
+            className="dark-bg-tx fixed top-0 left-0 right-0 shadow-md p-4 md:p-5 lg:p-6 z-50">
             <div className="max-w-6xl mx-auto flex justify-between items-center gap-2">
                 {/* Logo */}
                 <h1 className="text-lg md:text-xl lg:text-2xl font-bold whitespace-nowrap">
                     Yevhen Oshkukov
                 </h1>
 
-                {/* Desktop navigation — з md і вище */}
+                {/* Desktop navigation — with md and height */}
                 <ul className="hidden md:flex justify-between lg:space-x-6 text-sm md:text-base lg:text-lg font-medium">
                     {['/', '/resume', '/education', '/certificates', '/projects', '/contact'].map((path, i) => {
                         const label = ['Home', 'Resume', 'Education', 'Certificates', 'Projects', 'Contact'][i];
@@ -49,7 +49,7 @@ export default function Header() {
                                     to={path}
                                     className={({isActive}) =>
                                         isActive
-                                            ? "link-header activeLink-header-gray transition-theme-color"
+                                            ? "link-header activeElem-header"
                                             : "link-header"
                                     }
                                 >
@@ -64,7 +64,7 @@ export default function Header() {
                 <div className="flex items-center gap-2 md:hidden">
                     <button
                         onClick={handleThemeToggle}
-                        className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        className="p-2 rounded-md menu-theme-btn"
                         aria-label="Toggle Dark Mode"
                     >
 
@@ -74,7 +74,7 @@ export default function Header() {
 
                     <button
                         onClick={toggleMobileMenu}
-                        className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+                        className="p-2 rounded-md menu-theme-btn"
                         aria-label="Toggle Mobile Menu"
                     >
                         <FaBars size={20}/>
@@ -85,7 +85,7 @@ export default function Header() {
                 <div className="hidden md:block">
                     <button
                         onClick={handleThemeToggle}
-                        className="p-2 bg-gray-200 dark:bg-gray-700 rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+                        className="p-2 activeElem-header"
                         aria-label="Toggle Dark Mode"
                     >
                         {/* Show icon depending on theme */}
@@ -97,7 +97,7 @@ export default function Header() {
 
             {/* Mobile menu — only TO md */}
             {isMobileMenuOpen && (
-                <div className="md:hidden mt-4 pt-4 border-t dark:border-gray-700">
+                <div className="md:hidden mt-4 pt-4 border-t">
                     <nav className="navigation px-2">
                         <ul className="flex flex-col space-y-1">
                             {['/', '/resume', '/education', '/certificates', '/projects', '/contact'].map((path, i) => {
@@ -109,7 +109,7 @@ export default function Header() {
                                             onClick={closeMobileMenu}
                                             className={({isActive}) =>
                                                 isActive
-                                                    ? "link-header activeLink-header-gray"
+                                                    ? "link-header activeElem-header"
                                                     : "link-header"
                                             }
                                         >

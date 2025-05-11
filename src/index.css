@@ -72,40 +72,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
 
+@layer base {
+    * {
+        @apply transition-colors duration-500 ease-in-out;
+    }
 
-    #root{
+    #root {
         @apply min-h-screen flex flex-col;
     }
 
     .body-style {
-        @apply bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-200 font-sans scroll-smooth;
+        @apply bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-200 font-sans;
     }
 
+}
 
+@layer components {
 
-
-    .transition-theme-color {
-        @apply transition-colors duration-1000 ease-in-out;
-    }
-
-    .transform-el-scale {
+   .transform-el-scale {
         @apply hover:scale-105 transition-all duration-300 ease-in-out transform;
     }
 
-    .transition-default {
-        @apply transition-all duration-500 ease-in-out;
-    }
-
-    .activeLink-header-gray {
+   .activeElem-header {
         @apply bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded-md;
     }
 
     .link-header {
-        @apply py-2 px-3 hover:text-blue-600 scale-110;
+        @apply py-2 px-3 hover:text-blue-600;
     }
-
 
 
     .btn-style {
@@ -114,21 +109,21 @@
         rounded transition-colors duration-300 w-auto;
     }
 
-    .project-label{
+    .project-label {
         @apply text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded dark:bg-blue-900 dark:text-blue-200 capitalize
     }
 
-    /*.btn-style {*/
-    /*    @apply inline-block bg-blue-600 text-white px-6 py-3 rounded-lg*/
-    /*    hover:bg-blue-700 hover:shadow-xl shadow-md w-full md:w-auto*/
-    /*    transition-all duration-500 ease-in-out transform hover:scale-105;*/
-    /*}*/
-
-
-
-
-
     .project-detail-h3 {
         @apply text-xl font-semibold pb-2;
+    }
+}
+
+@layer utilities {
+    .dark-bg-tx{
+        @apply dark:bg-gray-800 dark:text-gray-300 bg-white
+    }
+
+    .menu-theme-btn{
+        @apply dark:bg-gray-700  bg-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600
     }
 }

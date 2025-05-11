@@ -8,7 +8,7 @@ export default function App() {
     const loadProjects = useProjectsStore((state) => state.loadProjects);
 
     useEffect(() => {
-        loadProjects(); // виконується один раз при старті
+        loadProjects(); // executed once at startup
     }, [loadProjects]);
 
     return useRoutes(routes);
