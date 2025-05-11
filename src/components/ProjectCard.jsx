@@ -1,4 +1,3 @@
-// components/ProjectCard.jsx
 import React from 'react';
 
 export default function ProjectCard({ project, onViewDetails }) {
@@ -20,7 +19,6 @@ export default function ProjectCard({ project, onViewDetails }) {
             <button
                 onClick={() => onViewDetails(project.id)}
                 className="mt-4 py-2 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors duration-300 w-full"
-                // className="btn-style"
             >
                 View Details
             </button>

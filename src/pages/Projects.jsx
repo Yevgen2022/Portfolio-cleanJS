@@ -3,12 +3,14 @@ import { useFilteredProjects } from "../hooks/useFilteringProjects";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
+
     const navigate = useNavigate();
 
     const {
         filteredProjects,
         selectedType,
         handleFilterChange,
+        types,
     } = useFilteredProjects();
 
     const handleViewDetails = (projectId) => {
@@ -28,11 +30,12 @@ export default function Projects() {
                         value={selectedType}
                         onChange={handleFilterChange}
                     >
-                        <option value="all">All projects</option>
-                        <option value="landing">Landing</option>
-                        <option value="frontend-app">Frontend-app</option>
-                        <option value="backend-app">Backend-app</option>
-                        <option value="educational">Educational</option>
+
+                        {types.map((type) => (
+                            <option key={type} value={type}>
+                                {type === "all" ? "All projects" : type.replace("-", " ")}
+                            </option>
+                        ))}
                     </select>
                 </div>
 

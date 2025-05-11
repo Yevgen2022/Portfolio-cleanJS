@@ -16,7 +16,7 @@ const routes = [
             { path: 'projects', element: <Projects /> },
             { path: 'education', element: <Education /> },
             { path: 'resume', element: <Resume /> },
-             { path: 'contact', element: <Contact /> },
+            { path: 'contact', element: <Contact /> },
             { path: 'certificates', element: <Certificates /> },
             { path: 'projects/:id', element: <ProjectsDetails /> },
         ],

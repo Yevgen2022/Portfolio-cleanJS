@@ -14,6 +14,10 @@ export function useFilteredProjects() {
         setSelectedType(e.target.value);
     };
 
+    // Types of all of projects
+    const types = ["all", ...new Set(projects.map((p) => p.type))];
+
+
     // Calculating a filtered list
     const filteredProjects =
         selectedType === "all"
@@ -25,5 +29,6 @@ export function useFilteredProjects() {
         filteredProjects,
         selectedType,
         handleFilterChange,
+        types,
     };
 }
