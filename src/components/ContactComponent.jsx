@@ -111,6 +111,13 @@ export default function Contact() {
                         >
                             Send Message
                         </button>
+                        <input
+                            type="text"
+                            name="_gotcha"
+                            style={{ display: "none" }}
+                            tabIndex="-1"
+                            autoComplete="off"
+                        />
                     </form>
                 </div>
             </div>
