@@ -2,7 +2,7 @@ export default function Footer()
 {
     return (
         <footer
-            className="bg-white text-center p-6 border-t text-gray-500 dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700 transition-theme-color">
+            className="dark-bg-tx text-center p-6 border-t text-gray-500   dark:border-gray-700">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-center space-x-6 mb-4">
                     <a href="https://github.com/Yevgen2022?tab=repositories" target="_blank"

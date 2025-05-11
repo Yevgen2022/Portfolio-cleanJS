@@ -40,8 +40,7 @@ export default function Certificates() {
                                 isGrid
                                     ? "flex-col items-center text-center"
                                     : "flex-row items-center gap-4"
-                                // } transform-el-scale`}
-                            } hover:shadow-xl transition-all duration-300`}
+                            } hover:shadow-xl transition-shadow duration-300`}
                         >
                             <img
                                 src={cert.img}

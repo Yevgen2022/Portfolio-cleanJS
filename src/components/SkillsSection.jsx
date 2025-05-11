@@ -1,5 +1,5 @@
 import SkillCard from "./SkillCard";
-import {skills} from "../data/profileData"; // або "../data/skillsData"
+import {skills} from "../data/profileData";
 
 export default function SkillsSection() {
 

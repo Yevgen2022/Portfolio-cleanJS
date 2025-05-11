@@ -1,4 +1,3 @@
-// <!-- Contact -->
 import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
 
 
@@ -6,7 +5,7 @@ export default function Contact() {
     return (
         <section id="contact" className="mb-16">
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md">
+            <div className="dark-bg-tx p-6 rounded-xl shadow-md">
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left side */}
                     <div>

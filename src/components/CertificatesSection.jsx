@@ -1,5 +1,5 @@
 import CertificateCard from "./CertificateCard";
-import {certificates} from "../data/profileData"; // або ../data/certificatesData
+import {certificates} from "../data/profileData";
 
 export default function CertificatesSection() {
 

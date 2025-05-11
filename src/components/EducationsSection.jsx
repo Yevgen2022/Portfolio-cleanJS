@@ -1,5 +1,5 @@
 import EducationCard from "./EducationCard";
-import {educations} from "../data/profileData"; // або інший файл, якщо ти зберігаєш окремо
+import {educations} from "../data/profileData";
 
 export default function EducationsSection() {
 

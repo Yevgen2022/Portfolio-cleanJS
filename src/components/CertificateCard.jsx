@@ -1,10 +1,9 @@
-// components/CertificateCard.jsx
 import { FaCertificate } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function CertificateCard({ title, issuer, date, link }) {
     return (
-        <div className="bg-white p-6 rounded-xl shadow-md dark:bg-gray-800">
+        <div className="p-6 rounded-xl shadow-md dark-bg-tx">
             <div className="flex items-start gap-4">
                 <div className="text-3xl text-blue-600">
                     <FaCertificate className="text-blue-600 text-2xl" />
