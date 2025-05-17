@@ -1,164 +1,46 @@
-// import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
-//
-//
-// export default function Contact() {
-//     return (
-//         <section id="contact" className="mb-16">
-//             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-//             <div className="dark-bg-tx p-6 rounded-xl shadow-md">
-//                 <div className="grid md:grid-cols-2 gap-8">
-//                     {/* Left side */}
-//                     <div>
-//                         <p className="mb-4">
-//                             I'm always open to new opportunities and collaborations. Feel free to reach out!
-//                         </p>
-//                         <div className="space-y-4">
-//                             <div className="flex items-center gap-3">
-//                                 <div className="text-blue-600 text-xl">
-//                                     <FaEnvelope className="text-blue-600 text-xl"/>
-//                                 </div>
-//                                 <div>
-//                                     <p className="text-sm text-gray-600 dark:text-gray-400">Email</p>
-//                                     <a href="mailto:sy.yevhen.lc@gmail.com" className="text-blue-600 hover:underline">
-//                                         sy.yevhen.lc@gmail.com
-//                                     </a>
-//                                 </div>
-//                             </div>
-//                             <div className="flex items-center gap-3">
-//                                 <div className="text-blue-600 text-xl">
-//                                     <FaGithub className="text-blue-600 text-xl"/>
-//                                 </div>
-//                                 <div>
-//                                     <p className="text-sm text-gray-600 dark:text-gray-400">GitHub</p>
-//                                     <a
-//                                         href="https://github.com/Yevgen2022"
-//                                         target="_blank"
-//                                         rel="noopener noreferrer"
-//                                         className="text-blue-600 hover:underline"
-//                                     >
-//                                         Yevhen-Github
-//                                     </a>
-//                                 </div>
-//                             </div>
-//                             <div className="flex items-center gap-3">
-//                                 <div className="text-blue-600 text-xl">
-//                                     <FaLinkedin className="text-blue-600 text-xl"/>
-//                                 </div>
-//                                 <div>
-//                                     <p className="text-sm text-gray-600 dark:text-gray-400">LinkedIn</p>
-//                                     <a
-//                                         href="https://www.linkedin.com/in/yevhen-oshkukov-436973254/"
-//                                         target="_blank"
-//                                         rel="noopener noreferrer"
-//                                         className="text-blue-600 hover:underline"
-//                                     >
-//                                         Yevhen-LinkedIn
-//                                     </a>
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//
-//                     {/* Form */}
-//                     <form
-//                         action="https://formspree.io/f/xqaqaqbr"
-//                         method="POST"
-//                         data-formspree="false"
-//                         className="space-y-4"
-//                     >
-//                         <div>
-//                             <label htmlFor="name" className="block text-sm font-medium mb-1">
-//                                 Name
-//                             </label>
-//                             <input
-//                                 type="text"
-//                                 id="name"
-//                                 name="name"
-//                                 className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-700"
-//                                 required
-//                             />
-//                         </div>
-//                         <div>
-//                             <label htmlFor="email" className="block text-sm font-medium mb-1">
-//                                 Email
-//                             </label>
-//                             <input
-//                                 type="email"
-//                                 id="email"
-//                                 name="email"
-//                                 className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-700"
-//                                 required
-//                             />
-//                         </div>
-//                         <div>
-//                             <label htmlFor="message" className="block text-sm font-medium mb-1">
-//                                 Message
-//                             </label>
-//                             <textarea
-//                                 id="message"
-//                                 name="message"
-//                                 rows="4"
-//                                 className="w-full p-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-700"
-//                                 required
-//                             ></textarea>
-//                         </div>
-//
-//                         <input type="hidden" name="_next" value="thank.html"/>
-//
-//                         <button
-//                             type="submit"
-//                             className="btn-style"
-//                         >
-//                             Send Message
-//                         </button>
-//                         <input
-//                             type="text"
-//                             name="_gotcha"
-//                             style={{ display: "none" }}
-//                             tabIndex="-1"
-//                             autoComplete="off"
-//                         />
-//                     </form>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
+/**
+ formData — stores field values (controlled form).
+ setFormData — updates name, email, message.
+ showModal — controls the display of the modal window.
+ setShowModal(true) — show gratitude.
+ **/
 
 
-
-
-
-
-import { useState } from "react";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import {useState} from "react";
+import {FaEnvelope, FaGithub, FaLinkedin} from "react-icons/fa";
 
 export default function ContactComponent() {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+    const [formData, setFormData] = useState({name: "", email: "", message: ""});
     const [showModal, setShowModal] = useState(false);
+    const [isLoading, setIsLoading] = useState(false); // state for a spinner
+
 
     const handleChange = (e) => {
-        setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+        setFormData((prev) => ({...prev, [e.target.name]: e.target.value}));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);     //we show the spinner
 
         try {
             const res = await fetch("https://formspree.io/f/xqaqaqbr", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {"Content-Type": "application/json"},
                 body: JSON.stringify(formData),
             });
 
             if (res.ok) {
                 setShowModal(true);
-                setFormData({ name: "", email: "", message: "" });
+                setFormData({name: "", email: "", message: ""});    // clear form
             } else {
                 alert("Error submitting form.");
             }
         } catch {
             alert("Network error.");
+        } finally {
+            setIsLoading(false);         // hide spiner
         }
     };
 
@@ -170,23 +52,38 @@ export default function ContactComponent() {
                 <div className="grid md:grid-cols-2 gap-8">
                     {/* Left */}
                     <div>
-                        <p className="mb-4">
+                        <p className="mb-8">
                             I'm always open to new opportunities and collaborations. Feel free to reach out!
                         </p>
-                        <div className="space-y-4">
-                            <ContactItem icon={<FaEnvelope />} label="Email" text="sy.yevhen.lc@gmail.com" href="mailto:sy.yevhen.lc@gmail.com" />
-                            <ContactItem icon={<FaGithub />} label="GitHub" text="Yevhen-Github" href="https://github.com/Yevgen2022" />
-                            <ContactItem icon={<FaLinkedin />} label="LinkedIn" text="Yevhen-LinkedIn" href="https://www.linkedin.com/in/yevhen-oshkukov-436973254/" />
+                        <div className="space-y-6">
+                            <ContactItem icon={<FaEnvelope/>} label="Email" text="sy.yevhen.lc@gmail.com"
+                                         href="mailto:sy.yevhen.lc@gmail.com"/>
+                            <ContactItem icon={<FaGithub/>} label="GitHub" text="Yevhen-Github"
+                                         href="https://github.com/Yevgen2022"/>
+                            <ContactItem icon={<FaLinkedin/>} label="LinkedIn" text="Yevhen-LinkedIn"
+                                         href="https://www.linkedin.com/in/yevhen-oshkukov-436973254/"/>
                         </div>
                     </div>
 
                     {/* Form */}
                     <form onSubmit={handleSubmit} className="space-y-4">
-                        <InputField id="name" label="Name" value={formData.name} onChange={handleChange} />
-                        <InputField id="email" label="Email" type="email" value={formData.email} onChange={handleChange} />
-                        <TextAreaField id="message" label="Message" value={formData.message} onChange={handleChange} />
-                        <button type="submit" className="btn-style">Send Message</button>
-                        <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
+                        <InputField id="name" label="Name" value={formData.name} onChange={handleChange}/>
+                        <InputField id="email" label="Email" type="email" value={formData.email}
+                                    onChange={handleChange}/>
+                        <TextAreaField id="message" label="Message" value={formData.message} onChange={handleChange}/>
+                        <button type="submit"
+                                className={`btn-style ${isLoading ? 'cursor-not-allowed opacity-70' : ''}`}
+                                disabled={isLoading}>
+                            {isLoading ? (
+                                // <span className="spinner-border spinner-border-sm" role="status"></span>
+                                <span className="flex items-center gap-2">
+                                        <Spinner/> Sending...
+                                        </span>
+                            ) : (
+                                "Send Message"
+                            )}
+                        </button>
+                        <input type="text" name="_gotcha" style={{display: "none"}} tabIndex="-1" autoComplete="off"/>
                     </form>
                 </div>
             </div>
@@ -212,19 +109,20 @@ export default function ContactComponent() {
     );
 }
 
-function ContactItem({ icon, label, text, href }) {
+function ContactItem({icon, label, text, href}) {
     return (
         <div className="flex items-center gap-3">
             <div className="text-blue-600 text-xl">{icon}</div>
             <div>
                 <p className="text-sm text-gray-600 dark:text-gray-400">{label}</p>
-                <a href={href} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{text}</a>
+                <a href={href} target="_blank" rel="noopener noreferrer"
+                   className="text-blue-600 hover:underline">{text}</a>
             </div>
         </div>
     );
 }
 
-function InputField({ id, label, value, onChange, type = "text" }) {
+function InputField({id, label, value, onChange, type = "text"}) {
     return (
         <div>
             <label htmlFor={id} className="block text-sm font-medium mb-1">{label}</label>
@@ -241,7 +139,7 @@ function InputField({ id, label, value, onChange, type = "text" }) {
     );
 }
 
-function TextAreaField({ id, label, value, onChange }) {
+function TextAreaField({id, label, value, onChange}) {
     return (
         <div>
             <label htmlFor={id} className="block text-sm font-medium mb-1">{label}</label>
@@ -257,3 +155,29 @@ function TextAreaField({ id, label, value, onChange }) {
         </div>
     );
 }
+
+function Spinner() {
+    return (
+        <svg
+            className="animate-spin h-5 w-5 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+        >
+            <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+            ></circle>
+            <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+            ></path>
+        </svg>
+    );
+}
+
