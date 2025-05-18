@@ -17,7 +17,7 @@ A modern, responsive web portfolio to present my frontend and backend projects, 
 
 Live Demo
 
-https://yevhen2022.github.io/Portfolio
+https://github.com/Yevgen2022/Portfolio-React
 
 Features
 
