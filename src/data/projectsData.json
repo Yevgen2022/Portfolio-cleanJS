@@ -16,11 +16,36 @@
       "liveDemo": "https://yevgen2022.github.io/responsive-site-figma-weeb/"
   },
   {
+    "id": "developer-portfolio",
+    "type": "frontend-app",
+    "title": "Developer Portfolio",
+    "description": "A modern portfolio showcasing fullstack projects, certificates, and personal background with dynamic routing and theming.",
+    "featured": "true",
+    "technologies": [
+      "React", "Tailwind CSS", "Zustand", "React Router", "Formspree", "React Icons"
+    ],
+    "features": [
+      "Template-based project rendering",
+      "Filterable by project type",
+      "Featured section on homepage",
+      "Contact form with spinner and modal",
+      "Responsive and dark mode UI"
+    ],
+    "challenges": [
+      "Managing conditional routing and dynamic template rendering",
+      "State management between filters and views",
+      "Dark mode theming across components",
+      "Form submission handling and user feedback"
+    ],
+    "repoLink": "https://github.com/Yevgen2022/Portfolio-React",
+    "liveDemo": "https://yevhen2022.github.io/Portfolio"
+  },
+  {
     "id": "react-todo",
     "type": "frontend-app",
     "title": "React Todo App",
     "description": "A simple todo application built with React that allows users to manage their daily tasks.",
-    "featured": "true",
+    "featured": "false",
     "technologies": ["React", "JavaScript", "CSS", "Local State", "Modal UI"],
     "features": [
       "Add, edit, and delete tasks",
