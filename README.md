@@ -4,61 +4,40 @@ A modern, responsive web portfolio to present my frontend and backend projects, 
 
 ##  Live Demo
 
-[View it here](https://yevhen2022.github.io/Portfolio-React)
+[View it here](https://yevgen2022.github.io/Portfolio-React/)
 
 ---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
 
+1. Clean UI with Tailwind CSS  
+2. Dynamic routing via React Router  
+3. Filterable project templates (Landing, Frontend-App, Backend)  
+4. Certificate and education sections  
+5. Contact form with success modal and Formspree integration  
+6. Dark mode support  
 
-Developer Portfolio — Yevhen Oshkukov
+---
 
-A modern, responsive web portfolio to present my frontend and backend projects, resume, certificates, and contact information.
+##  Tech Stack
 
-Live Demo
+- **React + Vite**
+- Zustand for state management
+- Tailwind CSS for styling
+- React Router DOM
+- react-icons
+- Formspree (via fetch)
 
-https://github.com/Yevgen2022/Portfolio-React
+---
 
-Features
+##  Folder Structure (simplified)
 
-1.Clean UI with Tailwind CSS
-
-2.Dynamic routing via React Router
-
-3.Filterable project templates (Landing, Frontend-App, Backend)
-
-4.Certificate and education sections
-
-5.Contact form with success modal and Formspree integration
-
-6.Dark mode support
-
-Tech Stack
-
-React + Vite
-
-Zustand for state management
-
-Tailwind CSS for styling
-
-React Router DOM
-
-react-icons
-
-Formspree (via fetch)
-
-Folder Structure (simplified)
-
-```
-
+```text
 src/
-├── assets/img/...        # images
-├── components/           # UI components (Card, Footer, etc.)
-├── pages/templates/      # Main route views (Home, Contact, etc.)
-├── pages/projectsDetails # Single project view
-├── data/                 # JSON/JS profile & projects data
-├── store/                # Zustand global state
-├── routes/               # Routing logic
-
-```
-
+├── assets/img/           # Project, certificates, and profile images
+├── components/           # Reusable UI components (Card, Footer, etc.)
+├── pages/templates/      # Main route views (Home, Contact, Resume, etc.)
+├── pages/projectsDetails # Dynamic project detail views
+├── data/                 # JSON/JS project and profile data
+├── store/                # Zustand global state logic
+├── routes/               # App routing configuration
