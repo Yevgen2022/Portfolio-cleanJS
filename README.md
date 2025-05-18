@@ -32,7 +32,7 @@ A modern, responsive web portfolio to present my frontend and backend projects, 
 
 ##  Folder Structure (simplified)
 
-```text
+```
 src/
 ├── assets/img/           # Project, certificates, and profile images
 ├── components/           # Reusable UI components (Card, Footer, etc.)
