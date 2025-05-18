@@ -49,7 +49,7 @@ react-icons
 Formspree (via fetch)
 
 Folder Structure (simplified)
-
+***
 src/
 ├── assets/img/...        # images
 ├── components/           # UI components (Card, Footer, etc.)
@@ -59,12 +59,4 @@ src/
 ├── store/                # Zustand global state
 ├── routes/               # Routing logic
 
-Contact
-
-Feel free to reach out:
-
-GitHub: github.com/Yevgen2022
-
-LinkedIn: yevhen-oshkukov
-
-Email: sy.yevhen.lc@gmail.com
+***
