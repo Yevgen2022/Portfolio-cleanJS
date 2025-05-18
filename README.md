@@ -4,7 +4,7 @@ A modern, responsive web portfolio to present my frontend and backend projects, 
 
 ##  Live Demo
 
-[🔗 View it here](https://yevhen2022.github.io/Portfolio-React)
+[View it here](https://yevhen2022.github.io/Portfolio-React)
 
 ---
 
@@ -49,6 +49,8 @@ Formspree (via fetch)
 
 Folder Structure (simplified)
 
+```
+
 src/
 ├── assets/img/...        # images
 ├── components/           # UI components (Card, Footer, etc.)
@@ -58,4 +60,5 @@ src/
 ├── store/                # Zustand global state
 ├── routes/               # Routing logic
 
+```
 
