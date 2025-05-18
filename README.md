@@ -33,6 +33,7 @@ A modern, responsive web portfolio to present my frontend and backend projects, 
 ##  Folder Structure (simplified)
 
 ```
+
 src/
 ├── assets/img/           # Project, certificates, and profile images
 ├── components/           # Reusable UI components (Card, Footer, etc.)
@@ -41,6 +42,7 @@ src/
 ├── data/                 # JSON/JS project and profile data
 ├── store/                # Zustand global state logic
 ├── routes/               # App routing configuration
+
 ```
 
 ---
